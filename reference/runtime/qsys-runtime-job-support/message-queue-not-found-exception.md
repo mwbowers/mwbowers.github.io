@@ -1,7 +1,7 @@
 ---
-title: "MessageQueueNotFoundException class | QSYS API Reference Guide"
+title: "MessageQueueNotFoundException class"
 description: "The exception that is thrown when a program message queue is not found in the invocation stack. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 The exception that is thrown when a program message queue is not found in the invocation stack.

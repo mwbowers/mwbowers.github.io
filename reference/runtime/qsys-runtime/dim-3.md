@@ -1,7 +1,7 @@
 ---
-title: "Dim&lt;T1, T2, T3&gt; class | QSYS API Reference Guide"
+title: "Dim&amp;lt;T1, T2, T3&amp;gt; class   | QSYS API Reference Guide"
 description: "Defines a 3-digit dimension, from 100 to 999, to be used in the declaration of fixed-length array types. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 sitemap: false
 ---
 

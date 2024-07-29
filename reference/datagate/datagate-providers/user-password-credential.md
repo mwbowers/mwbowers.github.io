@@ -1,7 +1,7 @@
 ---
-title: "UserPasswordCredential class | QSYS API Reference Guide"
+title: "UserPasswordCredential class  | QSYS API Reference Guide"
 description: "The user name and password information of UserPasswordCredential may be used to establish authenticated connections to databases that require such inf"
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The user name and password information of UserPasswordCredential may be
@@ -71,6 +71,10 @@ UserPasswordCredential()
 
 Creates a new object that is a copy of the current instance.
 
+
+#### Remarks
+This method is used to create a copy of the current instance of the UserPasswordCredential class. The copy is made by creating a new instance of the UserPasswordCredential class with the same user, password, and password type as the current instance.
+
 ```cs
 object Clone()
 ```
@@ -78,6 +82,10 @@ object Clone()
 ### bool Equals([IDataGateCredential other](/reference/datagate/datagate-providers/i-datagate-credential.html))
 
 Determines whether the current instance of  is equal to the specified instance.
+
+
+#### Remarks
+This method is used to compare the current instance with another instance of the UserPasswordCredential class. The comparison is based on the user, password type, and password of the instances.
 
 ```cs
 bool Equals(IDataGateCredential other)
@@ -98,6 +106,10 @@ bool Equals(IDataGateCredential other)
 ### int GetHashCodeInternal()
 
 Serves as the default hash function for the current instance.
+
+
+#### Remarks
+This method is used to generate a hash code for the current instance of the UserPasswordCredential class. It takes into account the user, password type, and password of the instance to generate a unique hash code.
 
 ```cs
 int GetHashCodeInternal()

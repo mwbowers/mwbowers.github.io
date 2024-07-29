@@ -1,7 +1,7 @@
 ---
-title: "WebDisplayFileProxy class | QSYS API Reference Guide"
+title: "WebDisplayFileProxy class     | QSYS API Reference Guide"
 description: "Defines a Proxy implementation for the WebDisplayFile "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Defines a Proxy implementation for the WebDisplayFile

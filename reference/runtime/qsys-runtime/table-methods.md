@@ -1,7 +1,7 @@
 ---
-title: "TableMethods class | QSYS API Reference Guide"
+title: "TableMethods class            | QSYS API Reference Guide"
 description: "Contains extension methods for handling Table RPG semantics. "
-last_modified_at: 2024-07-09T17:00:50Z
+last_modified_at: 2024-07-29T23:19:52Z
 sitemap: false
 ---
 

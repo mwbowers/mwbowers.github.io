@@ -1,7 +1,7 @@
 ---
-title: "ActivationGroupCreateException class | QSYS API Reference Guide"
+title: "ActivationGroupCreateException class"
 description: "The exception that is thrown when an activation could not be found or created. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 The exception that is thrown when an activation could not be found or created.

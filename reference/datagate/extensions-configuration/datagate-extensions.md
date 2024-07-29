@@ -1,7 +1,7 @@
 ---
-title: "DataGateExtensions class | QSYS API Reference Guide"
+title: "DataGateExtensions class      | QSYS API Reference Guide"
 description: "Provides extension methods for the DataGate configuration. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides extension methods for the DataGate configuration.
@@ -28,6 +28,10 @@ Provides extension methods for the DataGate configuration.
 ### IReadOnlyDictionary<string, SourceProfile> GetSourceProfiles([IConfiguration config](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 
 Retrieves a read-only dictionary of source profiles from the configuration.
+
+
+#### Remarks
+This method is used to retrieve all source profiles from the configuration. The source profiles are loaded lazily, which means they are only loaded when they are accessed.
 
 ```cs
 IReadOnlyDictionary<string, SourceProfile> GetSourceProfiles(IConfiguration config)

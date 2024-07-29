@@ -1,7 +1,7 @@
 ---
-title: "DdsDecDateFieldTagHelper class | QSYS API Reference Guide"
+title: "DdsDecDateFieldTagHelper class"
 description: "Defines an input element to capture Dates for fields defined as decimal values. "
-last_modified_at: 2024-07-09T17:01:12Z
+last_modified_at: 2024-07-29T18:38:13Z
 ---
 
 Defines an input element to capture Dates for fields defined as decimal values.

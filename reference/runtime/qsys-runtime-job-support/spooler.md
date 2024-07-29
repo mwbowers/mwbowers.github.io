@@ -1,7 +1,7 @@
 ---
-title: "Spooler class | QSYS API Reference Guide"
+title: "Spooler class                 | QSYS API Reference Guide"
 description: "Provides the infrastructure to manage spooled output from print files.  "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Provides the infrastructure to manage spooled output from print files. 
@@ -53,6 +53,10 @@ void ClearQueue(string queueName)
 ### void CopyFileToDatabaseFile([string spoolFileName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string toDatabaseFile](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string job](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string spoolNumber](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string createdDate](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string toMember](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [bool replaceRecords](https://docs.microsoft.com/en-us/dotnet/api/system.boolean), [SpoolerControlCharacter controlCharacter](/reference/runtime/qsys-runtime-job-support/spooler-control-character.html))
 
 When overridden in a derived class, copies a Spooled File to a Database File.
+
+
+#### Remarks
+This base implentation throws a NotImplementedException exception.
 
 ```cs
 void CopyFileToDatabaseFile(string spoolFileName, string toDatabaseFile, string job, string spoolNumber, string createdDate, string toMember, bool replaceRecords, SpoolerControlCharacter controlCharacter)

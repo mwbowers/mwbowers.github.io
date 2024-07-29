@@ -1,7 +1,7 @@
 ---
-title: "Dependent class | QSYS API Reference Guide"
+title: "Dependent class               | QSYS API Reference Guide"
 description: "The `Dependent` class represents a dependency in the ASNA DataGate environment. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The `Dependent` class represents a dependency in the ASNA DataGate environment.
@@ -44,6 +44,10 @@ Each `Dependent` has an `AdgObjectType` indicating the type of the ASNA DataGate
 
 Determines whether the specified  is equal to the current .
 
+
+#### Remarks
+This method checks if the provided  is not null and if its , , and  properties are equal to those of the current instance.The comparison of  is case-insensitive.
+
 ```cs
 bool Equals(Dependent other)
 ```
@@ -63,6 +67,10 @@ bool Equals(Dependent other)
 ### bool Equals([object obj](https://docs.microsoft.com/en-us/dotnet/api/system.object))
 
 Determines whether the specified object is equal to the current .
+
+
+#### Remarks
+This method overrides the  method.It casts the provided object to a  and calls the  method to perform the comparison.If the cast is unsuccessful (i.e., if the object is not a ), the method returns false.
 
 ```cs
 bool Equals(object obj)
@@ -84,6 +92,10 @@ bool Equals(object obj)
 
 Serves as the default hash function.
 
+
+#### Remarks
+This method overrides the  method.It calculates the hash code for the current instance based on the , , and  properties.The hash code for  is calculated using a case-insensitive method.This hash code will be used when the  instance is used in a hash-based collection, like a hash set or a dictionary.
+
 ```cs
 int GetHashCode()
 ```
@@ -91,6 +103,10 @@ int GetHashCode()
 ### string ToString()
 
 Returns a string that represents the current object.
+
+
+#### Remarks
+This method overrides the  method and returns the  property of the current instance.This provides a string representation of the dependent that is the path name of the ASNA DataGate object it represents.
 
 ```cs
 string ToString()

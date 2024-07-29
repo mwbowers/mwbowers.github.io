@@ -1,7 +1,8 @@
 ---
-title: "IJobLoggerFactory interface | QSYS API Reference Guide"
+title: "IJobLoggerFactory interface   | QSYS API Reference Guide"
 description: "Defines a generalized way to to get hold of a message logger. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
+sitemap: false
 ---
 
 Defines a generalized way to to get hold of a message logger.

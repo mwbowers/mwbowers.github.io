@@ -1,7 +1,7 @@
 ---
-title: "SubfileRecordAttribute class | QSYS API Reference Guide"
+title: "SubfileRecordAttribute class  | QSYS API Reference Guide"
 description: "Defines Subfile Record Attribute on a type "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Defines Subfile Record Attribute on a type

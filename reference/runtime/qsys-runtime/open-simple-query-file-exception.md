@@ -1,7 +1,7 @@
 ---
-title: "OpenSimpleQueryFileException class | QSYS API Reference Guide"
+title: "OpenSimpleQueryFileException class"
 description: "An invalid QryKeyFlds string format has been entered. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 An invalid QryKeyFlds string format has been entered.

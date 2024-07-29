@@ -1,7 +1,7 @@
 ---
-title: "ActivationGroupCallException class | QSYS API Reference Guide"
+title: "ActivationGroupCallException class"
 description: "The exception that is thrown when an program is to be activated in the caller&#39;s activation but the caller activation group could not be found. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 The exception that is thrown when an program is to be activated in the caller's activation but the caller activation group could not be found.

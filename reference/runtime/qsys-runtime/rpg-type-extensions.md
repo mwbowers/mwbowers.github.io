@@ -1,7 +1,7 @@
 ---
 title: "RpgTypeExtensions class       | QSYS API Reference Guide"
 description: "Provides extension methods for RPG types, including methods for moving and manipulating fixed-length strings and decimal numbers. "
-last_modified_at: 2024-07-10T21:22:30Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Provides extension methods for RPG types, including methods for moving and manipulating fixed-length strings and decimal numbers.

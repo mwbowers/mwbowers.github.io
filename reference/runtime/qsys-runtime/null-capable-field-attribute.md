@@ -1,7 +1,7 @@
 ---
-title: "NullCapableFieldAttribute class | QSYS API Reference Guide"
+title: "NullCapableFieldAttribute class"
 description: "A non-RPG class may stamp a property or field member with this attribute to be considered as a null capable field by a consumer RPG program. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 A non-RPG class may stamp a property or field member with this attribute to be considered as a null capable field by a consumer RPG program.

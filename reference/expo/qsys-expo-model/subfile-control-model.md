@@ -1,7 +1,7 @@
 ---
-title: "SubfileControlModel class | QSYS API Reference Guide"
+title: "SubfileControlModel class     | QSYS API Reference Guide"
 description: "Defines the SubfileControlModel class "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Defines the SubfileControlModel class

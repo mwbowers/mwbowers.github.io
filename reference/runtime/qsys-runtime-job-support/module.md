@@ -1,7 +1,7 @@
 ---
-title: "Module class | QSYS API Reference Guide"
+title: "Module class                  | QSYS API Reference Guide"
 description: "Defines the core behavior of classes that were migrated from RPG or CL programs and modules. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Defines the core behavior of classes that were migrated from RPG or CL programs and modules.
@@ -64,6 +64,7 @@ Module(CommonProgram)
 | [ExecSQL_Statement](#void-execsql-statementstring-sqltext-dbparm--parameters)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [DBParm\[\]](/reference/runtime/qsys-runtime-job-support/db-parm.html)) | Execute an non-query SQL Command on the default Job's ado connection.
 | [ExecSQL_Statement](#void-execsql-statementsqlpreparedstatement-preparedstatement-dbparm--parameters)([SqlPreparedStatement](/reference/runtime/qsys-runtime-job-support/sql-prepared-statement.html), [DBParm\[\]](/reference/runtime/qsys-runtime-job-support/db-parm.html)) | Execute an non-query prepared SQL Command.
 | [GetLdaField](#string-getldafieldint-start-int-length)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a value stored in the LDA.
+| [GetModule<T>()](#t-getmodule-t) | Gets a module contained in the same program or in one of the service programs.
 | [PopInvocation()](#void-popinvocation) | Pops one invocation from the invocation stack.
 | [PushInvocation()](#void-pushinvocation) | Pushes the caller procedure in the invocation stack.
 | [ReceiveMessage](#message-receivemessageint-stackposition-string-stackname-messagetype-msgtype-string-msgkey-bool-remove)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [MessageType](/reference/runtime/qsys-runtime-job-support/message-type.html), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Receive messages from the Program Queue. Messages are received in FIFO order.
@@ -250,6 +251,14 @@ string GetLdaField(int start, int length)
 | Type | Description
 | --- | ---
 | [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) | The requested field value.
+
+### T GetModule<T>()
+
+Gets a module contained in the same program or in one of the service programs.
+
+```cs
+T GetModule<T>()
+```
 
 ### void PopInvocation()
 

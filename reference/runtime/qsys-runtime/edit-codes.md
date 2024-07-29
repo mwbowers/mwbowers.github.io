@@ -1,7 +1,7 @@
 ---
 title: "EditCodes enum                | QSYS API Reference Guide"
 description: "Name of Edit-Codes which define output formatting patterns for business numeric data. "
-last_modified_at: 2024-07-10T21:22:30Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Name of Edit-Codes which define output formatting patterns for business numeric data.

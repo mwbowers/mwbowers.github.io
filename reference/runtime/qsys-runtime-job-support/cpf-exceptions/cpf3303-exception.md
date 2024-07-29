@@ -1,7 +1,7 @@
 ---
-title: "CPF3303Exception class | QSYS API Reference Guide"
+title: "CPF3303Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when File &#39;{0}&#39; not found in job &#39;{1}/{2}/{3}&#39; "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 The exception that is thrown when File '{0}' not found in job '{1}/{2}/{3}'

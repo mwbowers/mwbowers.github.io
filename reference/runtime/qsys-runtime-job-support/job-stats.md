@@ -1,7 +1,7 @@
 ---
-title: "JobStats class | QSYS API Reference Guide"
+title: "JobStats class                | QSYS API Reference Guide"
 description: "Tracks lifetime metrics for the job. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Tracks lifetime metrics for the job.

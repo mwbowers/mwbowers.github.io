@@ -1,7 +1,7 @@
 ---
-title: "DgNegotiateException class | QSYS API Reference Guide"
+title: "DgNegotiateException class    | QSYS API Reference Guide"
 description: "Specialized Exception dealing with DataGate protocol negotiation. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Specialized Exception dealing with DataGate protocol negotiation.

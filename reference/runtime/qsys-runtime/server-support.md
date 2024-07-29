@@ -1,7 +1,7 @@
 ---
-title: "ServerSupport enum | QSYS API Reference Guide"
+title: "ServerSupport enum            | QSYS API Reference Guide"
 description: "For interactive applications that use a virtual terminal, this enum is used to select whether to start a server on the IBMi side. "
-last_modified_at: 2024-07-09T17:00:50Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 For interactive applications that use a virtual terminal, this enum is used to select whether to start a server on the IBMi side.

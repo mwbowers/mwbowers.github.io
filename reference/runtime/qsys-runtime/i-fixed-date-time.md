@@ -1,7 +1,7 @@
 ---
-title: "IFixedDateTime interface | QSYS API Reference Guide"
+title: "IFixedDateTime interface      | QSYS API Reference Guide"
 description: "Declares the basic functionality of a fixed datetime type. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Declares the basic functionality of a fixed datetime type.

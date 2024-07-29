@@ -1,7 +1,7 @@
 ---
-title: "RequiredOpenConnectionException class | QSYS API Reference Guide"
+title: "RequiredOpenConnectionException class"
 description: "Operation not available on un-opened Database -database name- exception. "
-last_modified_at: 2024-07-09T17:00:50Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Operation not available on un-opened Database -database name- exception.

@@ -1,7 +1,7 @@
 ---
-title: "EditedValueProviderFactory class | QSYS API Reference Guide"
+title: "EditedValueProviderFactory class"
 description: "Provides an Edited Value Provider factory "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Provides an Edited Value Provider factory

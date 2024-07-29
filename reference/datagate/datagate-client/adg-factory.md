@@ -1,7 +1,7 @@
 ---
-title: "AdgFactory class | QSYS API Reference Guide"
+title: "AdgFactory class              | QSYS API Reference Guide"
 description: "The AdgFactory class static methods construct instances of IAdgObject representing database files, libraries, and members along with IDataArea for dat"
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The AdgFactory class static methods construct instances of IAdgObject representing database files, libraries, and members along with IDataArea for data areas.
@@ -49,6 +49,10 @@ Any instance members are not guaranteed to be thread safe.
 
 Creates a new instance of the  interface with an unknown subtype.
 
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.The subtype of the data area is set to .
+
 ```cs
 IDataArea NewDataArea(AdgConnection cn, string PathName)
 ```
@@ -69,6 +73,10 @@ IDataArea NewDataArea(AdgConnection cn, string PathName)
 ### IDataArea NewDataArea([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgSubTypes DataAreaType](/reference/datagate/datagate-common/adg-sub-types.html))
 
 Creates a new instance of the  interface with a specified subtype.
+
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.The subtype of the data area is set to the value of the  parameter.
 
 ```cs
 IDataArea NewDataArea(AdgConnection cn, string PathName, AdgSubTypes DataAreaType)
@@ -92,6 +100,10 @@ IDataArea NewDataArea(AdgConnection cn, string PathName, AdgSubTypes DataAreaTyp
 
 Creates a new instance of the  interface.
 
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.
+
 ```cs
 IDirectory NewDirectory(AdgConnection cn, string PathName)
 ```
@@ -112,6 +124,10 @@ IDirectory NewDirectory(AdgConnection cn, string PathName)
 ### IFileObject NewFile([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Creates a new instance of the  interface.
+
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.
 
 ```cs
 IFileObject NewFile(AdgConnection cn, string PathName)
@@ -134,6 +150,10 @@ IFileObject NewFile(AdgConnection cn, string PathName)
 
 Creates a new instance of the  interface.
 
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.
+
 ```cs
 ILibraryList NewLibraryList(AdgConnection cn)
 ```
@@ -153,6 +173,10 @@ ILibraryList NewLibraryList(AdgConnection cn)
 ### IMember NewMember([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string PathName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Creates a new instance of the  interface.
+
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.
 
 ```cs
 IMember NewMember(AdgConnection cn, string PathName)
@@ -174,6 +198,10 @@ IMember NewMember(AdgConnection cn, string PathName)
 ### IAdgObject NewObject([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [AdgObjectTypes type](/reference/datagate/datagate-common/adg-object-types.html), [string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Creates a new instance of the  interface.
+
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.
 
 ```cs
 IAdgObject NewObject(AdgConnection cn, AdgObjectTypes type, string path)
@@ -197,6 +225,10 @@ IAdgObject NewObject(AdgConnection cn, AdgObjectTypes type, string path)
 
 Creates a new instance of the  interface.
 
+
+#### Remarks
+This method uses the  method to create a new instance of the  interface.The  method is a generic method that takes a function delegate as a parameter.The function delegate is responsible for creating the new instance.If the  parameter is null, an  is thrown.
+
 ```cs
 ISystemValue NewSystemValue(AdgConnection cn, bool withNewTransaction)
 ```
@@ -217,6 +249,10 @@ ISystemValue NewSystemValue(AdgConnection cn, bool withNewTransaction)
 ### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [string docObjectNewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
 
 Reads an XML document and creates a new instance of the  interface.
+
+
+#### Remarks
+This method uses the  method to read an XML document and create a new instance of the  interface.The  method takes several parameters, including an , a container path, an object type, a new object name, an , an , and an .If the  parameter is null, an  is thrown.
 
 ```cs
 IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, string docObjectNewName, XmlReader reader, XmlOptions options, XmlCancelEventHandler observer)
@@ -244,6 +280,10 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 
 Reads an XML document and creates a new instance of the  interface.
 
+
+#### Remarks
+This method is a convenience overload of the ReadXml method that does not require an  parameter.It calls the ReadXml method with the provided parameters and a null .If the  parameter is null, an  is thrown.
+
 ```cs
 IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, string docObjectNewName, XmlReader reader, XmlOptions options)
 ```
@@ -268,6 +308,10 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 ### IAdgObject ReadXml([AdgConnection cn](/reference/datagate/datagate-client/adg-connection.html), [string containerPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AdgObjectTypes docObjectType](/reference/datagate/datagate-common/adg-object-types.html), [XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler observer](/reference/datagate/datagate-client/xml-cancel-event-handler.html))
 
 Reads an XML document and creates a new instance of the  interface.
+
+
+#### Remarks
+This method is a convenience overload of the ReadXml method that does not require a new object name parameter.It calls the ReadXml method with the provided parameters and a null new object name.If the  parameter is null, an  is thrown.
 
 ```cs
 IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, XmlReader reader, XmlOptions options, XmlCancelEventHandler observer)
@@ -294,6 +338,10 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 
 Reads an XML document and creates a new instance of the  interface.
 
+
+#### Remarks
+This method is a convenience overload of the ReadXml method that does not require a new object name or an  parameter.It calls the ReadXml method with the provided parameters, a null new object name, and a null .If the  parameter is null, an  is thrown.
+
 ```cs
 IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObjectType, XmlReader reader, XmlOptions options)
 ```
@@ -318,6 +366,10 @@ IAdgObject ReadXml(AdgConnection cn, string containerPath, AdgObjectTypes docObj
 
 Wraps an  in a synchronized (thread-safe) wrapper.
 
+
+#### Remarks
+This method checks the type of the  parameter and wraps it in a corresponding synchronized (thread-safe) wrapper.If the object is already a synchronized object, it is returned as is.If the object is an , it is wrapped in a .If the object is an , it is wrapped in a .If the object is an , it is wrapped in a .If the object is an , it is wrapped in a .If the object is none of the above types, it is wrapped in a .
+
 ```cs
 IAdgObject Synchronized(IAdgObject adgObj)
 ```
@@ -337,6 +389,10 @@ IAdgObject Synchronized(IAdgObject adgObj)
 ### ILibraryList Synchronized([ILibraryList llObj](/reference/datagate/datagate-client/i-library-list.html))
 
 Wraps an  in a synchronized (thread-safe) wrapper.
+
+
+#### Remarks
+This method checks if the  parameter is already a synchronized object. If it is, the method returns the object as is. If it's not, the method wraps it in a  to ensure thread safety.
 
 ```cs
 ILibraryList Synchronized(ILibraryList llObj)

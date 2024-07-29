@@ -801,6 +801,29 @@ Reference:
         path: /reference/datagate/extensions-configuration/i-asna-config.html
       - title: IDataGateConfig
         path: /reference/datagate/extensions-configuration/i-datagate-config.html
+
+
+
+    sectionpath: /reference/datagate/extensions-configuration/landing-page-namespace.html
+    section:
+    - sectiontitle: Classes
+      sectionpath: /reference/datagate/extensions-configuration/landing-page-classes.html
+      section:
+      - title: AsnaConfig
+        path: /reference/datagate/extensions-configuration/asna-config.html
+      - title: AsnaConfigHelper
+        path: /reference/datagate/extensions-configuration/asna-config-helper.html
+      - title: DataGateExtensions
+        path: /reference/datagate/extensions-configuration/datagate-extensions.html
+      - title: RootExtensions
+        path: /reference/datagate/extensions-configuration/root-extensions.html
+    - sectiontitle: Interfaces
+      sectionpath: /reference/datagate/extensions-configuration/landing-page-interfaces.html
+      section:
+      - title: IAsnaConfig
+        path: /reference/datagate/extensions-configuration/i-asna-config.html
+      - title: IDataGateConfig
+        path: /reference/datagate/extensions-configuration/i-datagate-config.html
   - sectiontitle: ASNA.QSys.Runtime
     sectionpath: /reference/runtime/qsys-runtime/landing-page-namespace.html
     section:

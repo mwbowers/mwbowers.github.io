@@ -1,7 +1,7 @@
 ---
-title: "InvariantCultureTypeConverter class | QSYS API Reference Guide"
+title: "InvariantCultureTypeConverter class"
 description: "Provides a type converter to convert object types to and from string representations, using the invariant culture. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides a type converter to convert object types to and from string representations, using the invariant culture.
@@ -64,6 +64,10 @@ InvariantCultureTypeConverter(TypeConverter)
 
 Returns whether this converter can convert an object of the given type to the type of this converter, using the invariant culture.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the conversion check is performed using the invariant culture.This is useful when you need to ensure that type conversion checks are not affected by the current culture settings of the system.
+
 ```cs
 bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
 ```
@@ -84,6 +88,10 @@ bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)
 ### bool CanConvertTo([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [Type destinationType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
 Returns whether this converter can convert an object of this converter's type to the specified type, using the invariant culture.
+
+
+#### Remarks
+This method overrides the base implementation to ensure that the conversion check is performed using the invariant culture.This is useful when you need to ensure that type conversion checks are not affected by the current culture settings of the system.
 
 ```cs
 bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
@@ -106,6 +114,10 @@ bool CanConvertTo(ITypeDescriptorContext context, Type destinationType)
 
 Converts the given value object to the type of this converter, using the invariant culture.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the conversion is performed using the invariant culture, regardless of the culture parameter provided.This is useful when you need to ensure that type conversions are not affected by the current culture settings of the system.
+
 ```cs
 object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
 ```
@@ -127,6 +139,10 @@ object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object v
 ### object ConvertTo([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [CultureInfo culture](https://docs.microsoft.com/en-us/dotnet/api/system.globalization.cultureinfo), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Type destinationType](https://docs.microsoft.com/en-us/dotnet/api/system.type))
 
 Converts the given value object to the specified type, using the invariant culture.
+
+
+#### Remarks
+This method overrides the base implementation to ensure that the conversion is performed using the invariant culture, regardless of the culture parameter provided.This is useful when you need to ensure that type conversions are not affected by the current culture settings of the system.
 
 ```cs
 object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object value, Type destinationType)
@@ -151,6 +167,10 @@ object ConvertTo(ITypeDescriptorContext context, CultureInfo culture, object val
 
 Creates an instance of the type that this  is associated with, using the specified context and the set of property values.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the instance creation is performed using the wrapped converter.This is useful when you need to create an instance of a type using a set of property values, and you want to ensure that the creation process is not affected by the current culture settings of the system.
+
 ```cs
 object CreateInstance(ITypeDescriptorContext context, IDictionary propertyValues)
 ```
@@ -172,6 +192,10 @@ object CreateInstance(ITypeDescriptorContext context, IDictionary propertyValues
 
 Determines whether the specified object is equal to the current object, using the wrapped converter's Equals method.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the equality check is performed using the wrapped converter's Equals method.This is useful when you need to ensure that equality checks are not affected by the current culture settings of the system.
+
 ```cs
 bool Equals(object obj)
 ```
@@ -191,6 +215,10 @@ bool Equals(object obj)
 ### bool GetCreateInstanceSupported([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
 Returns whether changing a value on this object requires a call to the  method to create a new value.
+
+
+#### Remarks
+This method overrides the base implementation to ensure that the check is performed using the wrapped converter's method.This is useful when you need to determine if an instance of a type can be created from a set of property values, and you want to ensure that the check is not affected by the current culture settings of the system.
 
 ```cs
 bool GetCreateInstanceSupported(ITypeDescriptorContext context)
@@ -212,6 +240,10 @@ bool GetCreateInstanceSupported(ITypeDescriptorContext context)
 
 Serves as the default hash function, using the wrapped converter's GetHashCode method.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the hash code is generated using the wrapped converter's GetHashCode method.This is useful when you need to ensure that hash code generation is not affected by the current culture settings of the system.
+
 ```cs
 int GetHashCode()
 ```
@@ -219,6 +251,10 @@ int GetHashCode()
 ### PropertyDescriptorCollection GetProperties([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0), [object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [Attribute\[\] attributes](https://docs.microsoft.com/en-us/dotnet/api/system.attribute))
 
 Returns a collection of properties for the type of array specified by the value parameter, using the specified context and attributes.
+
+
+#### Remarks
+This method overrides the base implementation to ensure that the properties are retrieved using the wrapped converter's method.This is useful when you need to retrieve the properties of a type, and you want to ensure that the retrieval process is not affected by the current culture settings of the system.
 
 ```cs
 PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, object value, Attribute[] attributes)
@@ -242,6 +278,10 @@ PropertyDescriptorCollection GetProperties(ITypeDescriptorContext context, objec
 
 Returns whether this object supports properties, using the wrapped converter's method.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the check is performed using the wrapped converter's method.This is useful when you need to determine if an object supports properties, and you want to ensure that the check is not affected by the current culture settings of the system.
+
 ```cs
 bool GetPropertiesSupported(ITypeDescriptorContext context)
 ```
@@ -261,6 +301,10 @@ bool GetPropertiesSupported(ITypeDescriptorContext context)
 ### StandardValuesCollection GetStandardValues([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
 Returns a collection of standard values for the data type this type converter is designed for when provided with a format context.
+
+
+#### Remarks
+This method overrides the base implementation to ensure that the standard values are retrieved using the wrapped converter's method.This is useful when you need to retrieve the standard values of a type, and you want to ensure that the retrieval process is not affected by the current culture settings of the system.
 
 ```cs
 StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
@@ -282,6 +326,10 @@ StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)
 
 Returns whether the collection of standard values returned from  is an exclusive list of possible values, using the wrapped converter's method.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the check is performed using the wrapped converter's method.This is useful when you need to determine if the standard values of a type form an exclusive list, and you want to ensure that the check is not affected by the current culture settings of the system.
+
 ```cs
 bool GetStandardValuesExclusive(ITypeDescriptorContext context)
 ```
@@ -301,6 +349,10 @@ bool GetStandardValuesExclusive(ITypeDescriptorContext context)
 ### bool GetStandardValuesSupported([ITypeDescriptorContext context](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.itypedescriptorcontext?view=net-8.0))
 
 Returns whether this object supports a standard set of values that can be picked from a list, using the wrapped converter's method.
+
+
+#### Remarks
+This method overrides the base implementation to ensure that the check is performed using the wrapped converter's method.This is useful when you need to determine if an object supports a standard set of values, and you want to ensure that the check is not affected by the current culture settings of the system.
 
 ```cs
 bool GetStandardValuesSupported(ITypeDescriptorContext context)
@@ -322,6 +374,10 @@ bool GetStandardValuesSupported(ITypeDescriptorContext context)
 
 Returns whether the given value object is valid for this type and for the specified context, using the wrapped converter's method.
 
+
+#### Remarks
+This method overrides the base implementation to ensure that the validity check is performed using the wrapped converter's method.This is useful when you need to ensure that validity checks are not affected by the current culture settings of the system.
+
 ```cs
 bool IsValid(ITypeDescriptorContext context, object value)
 ```
@@ -342,6 +398,10 @@ bool IsValid(ITypeDescriptorContext context, object value)
 ### string ToString()
 
 Returns a string that represents the current object, using the wrapped converter's ToString method.
+
+
+#### Remarks
+This method overrides the base implementation to ensure that the string representation is generated using the wrapped converter's ToString method.This is useful when you need to ensure that the string representation of the object is not affected by the current culture settings of the system.
 
 ```cs
 string ToString()

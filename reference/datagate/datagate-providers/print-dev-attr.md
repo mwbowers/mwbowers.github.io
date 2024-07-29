@@ -1,7 +1,7 @@
 ---
-title: "PrintDevAttr class | QSYS API Reference Guide"
+title: "PrintDevAttr class            | QSYS API Reference Guide"
 description: "Compatibility class for dgPrintDeviceAttr structure. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Compatibility class for dgPrintDeviceAttr structure.

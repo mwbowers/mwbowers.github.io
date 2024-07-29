@@ -1,7 +1,7 @@
 ---
-title: "RootExtensions class | QSYS API Reference Guide"
+title: "RootExtensions class          | QSYS API Reference Guide"
 description: "Provides extension methods for the root configuration. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:50Z
 ---
 
 Provides extension methods for the root configuration.
@@ -31,6 +31,10 @@ Provides extension methods for the root configuration.
 
 Retrieves the ASNA configuration section from the configuration.
 
+
+#### Remarks
+This method is used to retrieve the ASNA configuration section from the configuration. The section is identified by the SECTION_ASNA constant.
+
 ```cs
 IConfigurationSection GetAsnaConfig(IConfiguration This)
 ```
@@ -50,6 +54,10 @@ IConfigurationSection GetAsnaConfig(IConfiguration This)
 ### IConfigurationSection GetDataGateConfig([IConfiguration This](https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.configuration.iconfiguration?view=net-8.0))
 
 Retrieves the DataGate configuration section from the ASNA configuration.
+
+
+#### Remarks
+This method is used to retrieve the DataGate configuration section from the ASNA configuration. The section is identified by the SECTION_ASNA_DG constant.
 
 ```cs
 IConfigurationSection GetDataGateConfig(IConfiguration This)

@@ -1,7 +1,7 @@
 ---
-title: "CopyFromImportFileOptions class | QSYS API Reference Guide"
+title: "CopyFromImportFileOptions class"
 description: "Provides options for copying data from an import file. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides options for copying data from an import file.

@@ -1,7 +1,7 @@
 ---
-title: "ReadSequentialMode enum | QSYS API Reference Guide"
+title: "ReadSequentialMode enum       | QSYS API Reference Guide"
 description: "Specifies the mode for reading data sequentially. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Specifies the mode for reading data sequentially.

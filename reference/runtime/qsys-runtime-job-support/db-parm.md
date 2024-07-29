@@ -1,7 +1,7 @@
 ---
-title: "DBParm class | QSYS API Reference Guide"
+title: "DBParm class                  | QSYS API Reference Guide"
 description: "Represents a SQL Parameter (used as base to specific parameter type) "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Represents a SQL Parameter (used as base to specific parameter type)

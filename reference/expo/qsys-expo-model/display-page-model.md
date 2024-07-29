@@ -1,7 +1,7 @@
 ---
-title: "DisplayPageModel class | QSYS API Reference Guide"
+title: "DisplayPageModel class        | QSYS API Reference Guide"
 description: "Defines a specialized YellowPageModel class to provide support for fields in Records with data from the DataSet "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Defines a specialized YellowPageModel class to provide support for fields in Records with data from the DataSet

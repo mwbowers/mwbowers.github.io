@@ -1,7 +1,7 @@
 ---
-title: "BaseRecordAttribute class | QSYS API Reference Guide"
+title: "BaseRecordAttribute class     | QSYS API Reference Guide"
 description: "Defines Base Record Attributes on a type "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Defines Base Record Attributes on a type

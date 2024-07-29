@@ -1,7 +1,8 @@
 ---
-title: "InspectFileOutput enum | QSYS API Reference Guide"
+title: "InspectFileOutput enum        | QSYS API Reference Guide"
 description: "Specifies the output format for a file inspection. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
+sitemap: false
 ---
 
 Specifies the output format for a file inspection.

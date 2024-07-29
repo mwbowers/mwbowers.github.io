@@ -1,7 +1,7 @@
 ---
-title: "MultiCharDelimiter class | QSYS API Reference Guide"
+title: "MultiCharDelimiter class      | QSYS API Reference Guide"
 description: "Represents a delimiter in a data stream. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Represents a delimiter in a data stream.
@@ -43,6 +43,10 @@ It also provides methods and operators for comparing delimiters, converting them
 
 Determines whether the specified object is equal to the current  object.
 
+
+#### Remarks
+This method overrides the base  method and performs a check to determine equality:- If the provided object is a  instance, it compares the string representation of the  instance with the value of the  instance using ordinal string comparison.- If the provided object is not a  instance, it returns false.
+
 ```cs
 bool Equals(object obj)
 ```
@@ -63,6 +67,10 @@ bool Equals(object obj)
 
 Serves as the default hash function.
 
+
+#### Remarks
+This method overrides the base  method and simply calls the base implementation.The base implementation of  returns a hash code for the current object.
+
 ```cs
 int GetHashCode()
 ```
@@ -70,6 +78,10 @@ int GetHashCode()
 ### bool op_Equality([MultiCharDelimiter ldlim](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
 
 Determines whether a  instance and a  instance are equal.
+
+
+#### Remarks
+This operator performs a series of checks to determine equality:- If both instances are null, they are considered equal.- If one instance is null and the other is not, they are considered not equal.- If both instances are not null, it compares the string representation of the  instance with the value of the  instance.
 
 ```cs
 bool op_Equality(MultiCharDelimiter ldlim, Delimiter rdlim)
@@ -92,6 +104,10 @@ bool op_Equality(MultiCharDelimiter ldlim, Delimiter rdlim)
 
 Determines whether a  instance and a  instance are equal.
 
+
+#### Remarks
+This operator uses the equality operator (==) of the  class to compare the two instances.The equality comparison is done by comparing the string representation of the  instance with the value of the  instance.
+
 ```cs
 bool op_Equality(Delimiter ldlim, MultiCharDelimiter rdlim)
 ```
@@ -112,6 +128,10 @@ bool op_Equality(Delimiter ldlim, MultiCharDelimiter rdlim)
 ### bool op_Inequality([MultiCharDelimiter ldlim](/reference/datagate/datagate-client/multi-char-delimiter.html), [Delimiter rdlim](/reference/datagate/datagate-client/delimiter.html))
 
 Determines whether a  instance and a  instance are not equal.
+
+
+#### Remarks
+This operator is the logical negation of the equality operator (==). It uses the equality operator to compare the two instances and then negates the result.
 
 ```cs
 bool op_Inequality(MultiCharDelimiter ldlim, Delimiter rdlim)
@@ -134,6 +154,10 @@ bool op_Inequality(MultiCharDelimiter ldlim, Delimiter rdlim)
 
 Determines whether a  instance and a  instance are not equal.
 
+
+#### Remarks
+This operator is the logical negation of the equality operator (==). It uses the equality operator to compare the two instances and then negates the result.The equality comparison is done by comparing the string representation of the  instance with the value of the  instance.
+
 ```cs
 bool op_Inequality(Delimiter ldlim, MultiCharDelimiter rdlim)
 ```
@@ -154,6 +178,10 @@ bool op_Inequality(Delimiter ldlim, MultiCharDelimiter rdlim)
 ### string ToString()
 
 Returns a string that represents the current  object.
+
+
+#### Remarks
+This method overrides the base  method and returns the value of the  instance.The value is a string that represents the multi-character delimiter.
 
 ```cs
 string ToString()

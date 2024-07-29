@@ -1,7 +1,7 @@
 ---
-title: "IndicatorExpression class | QSYS API Reference Guide"
+title: "IndicatorExpression class     | QSYS API Reference Guide"
 description: "A condition is an ANDed grouping of two through nine indicators that must all be in effect (set off if N or ! is specified; set on if N or ! is not sp"
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 A condition is an ANDed grouping of two through nine indicators that
@@ -50,6 +50,10 @@ IndicatorExpression(String)
 ### bool Eval([Char\[\] indicators](https://docs.microsoft.com/en-us/dotnet/api/system.char))
 
 Evaluates the indicator expression against the provided set of indicators.
+
+
+#### Remarks
+This method evaluates the indicator expression, which is a string representation of a boolean expression involving indicators. The indicators are represented as an array of characters, where each character represents the state of an indicator (typically '0' for off and '1' for on).The indicator expression is evaluated in the context of the provided indicators, and the result of the evaluation is returned as a boolean value.Note that the indicator expression must be a valid boolean expression involving the indicators, and any invalid expression will cause an exception to be thrown when this method is called.
 
 ```cs
 bool Eval(Char[] indicators)

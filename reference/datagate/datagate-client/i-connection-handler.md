@@ -1,7 +1,7 @@
 ---
-title: "IConnectionHandler interface | QSYS API Reference Guide"
+title: "IConnectionHandler interface  | QSYS API Reference Guide"
 description: "Defines the methods for handling connections. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Defines the methods for handling connections.
@@ -29,6 +29,10 @@ It can be implemented by any class that needs to manage connections, such as a d
 ### bool EnsureConnectionOpened()
 
 Ensures that the connection is open.
+
+
+#### Remarks
+This method checks if the connection is already open. If it is not, it attempts to open the connection. It returns true if the connection had to be opened, and false if the connection was already open. This can be useful to ensure that a connection is open before performing operations that require it.
 
 ```cs
 bool EnsureConnectionOpened()

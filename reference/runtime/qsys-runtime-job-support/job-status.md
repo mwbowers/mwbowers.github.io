@@ -1,7 +1,7 @@
 ---
-title: "JobStatus class | QSYS API Reference Guide"
+title: "JobStatus class               | QSYS API Reference Guide"
 description: "Represents the status of a job. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Represents the status of a job.

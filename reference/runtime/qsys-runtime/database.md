@@ -1,7 +1,7 @@
 ---
-title: "Database class | QSYS API Reference Guide"
+title: "Database class                | QSYS API Reference Guide"
 description: "Handles connections to a Database. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:18:00Z
 ---
 
 Handles connections to a Database.
@@ -99,6 +99,7 @@ Database(String, VirtualTerminal, OpenAccessDspF)
 | [GetSourceProfile](#sourceprofile-getsourceprofilestring-dbname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Gets a SourceProfile from the Database name store.
 | [InitializeMember](#void-initializememberstring-filepath-string-membername-int-recordcount)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Initializes a file member with the specified number of deleted records.
 | [Open()](#void-open) | Open a connection to a Database.
+| [PrepareNameStore\<T\>](#void-preparenamestore-t-namestoreoptions-options-string--configfiles)([NameStoreOptions](/reference/runtime/qsys-runtime/name-store-options.html), [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Prepares the Database name store. Should be called only once and before any attempt to use a DataGated database by name.
 | [RemoveDirectory](#void-removedirectorystring-directoryname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a directory (library) in the Database.
 | [RemoveMember](#void-removememberstring-filepath-string-membername)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Removes a member from the specified file.
 | [RenameFile](#void-renamefilestring-filepath-string-newname)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string), [String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Changes the name of a file in the Database.
@@ -324,6 +325,21 @@ Open a connection to a Database.
 ```cs
 void Open()
 ```
+
+### void PrepareNameStore\<T\>([NameStoreOptions options](/reference/runtime/qsys-runtime/name-store-options.html), [String\[\] configFiles](https://docs.microsoft.com/en-us/dotnet/api/system.string))
+
+Prepares the Database name store. Should be called only once and before any attempt to use a DataGated database by name.
+
+```cs
+void PrepareNameStore<T>(NameStoreOptions options, String[] configFiles)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [NameStoreOptions](/reference/runtime/qsys-runtime/name-store-options.html) | options | Tells the name store where to look for database connection information, e.g. config files, user secrets, and others.
+| [String\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.string) | configFiles | Optional collection of configuration files containing database connection information.
 
 ### void RemoveDirectory([string directoryName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 

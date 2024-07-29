@@ -1,7 +1,7 @@
 ---
-title: "ProgramIndicatorsAttribute class | QSYS API Reference Guide"
+title: "ProgramIndicatorsAttribute class"
 description: "For a non-RPG class to be used as the base class of an RPG class (AVR or Encore), this attribute indicates the name of the *INLR, *IN, and *INRT indic"
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 For a non-RPG class to be used as the base class of an RPG class (AVR or Encore), this attribute indicates the name of the *INLR, *IN, and *INRT indicators.

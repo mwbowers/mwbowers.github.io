@@ -1,7 +1,7 @@
 ---
-title: "IClientMonitor interface | QSYS API Reference Guide"
+title: "IClientMonitor interface      | QSYS API Reference Guide"
 description: "Defines the contract for monitoring a client in the ASNA DataGate client. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Defines the contract for monitoring a client in the ASNA DataGate client.
@@ -50,6 +50,10 @@ and current open files. It also provides a method to forcibly terminate the clie
 ### void Kill([int delay](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Forcibly terminates the current client.
+
+
+#### Remarks
+This method will forcibly terminate the client after the specified delay. Use this method with caution as it can lead to data loss if the client is in the middle of a transaction.
 
 ```cs
 void Kill(int delay)

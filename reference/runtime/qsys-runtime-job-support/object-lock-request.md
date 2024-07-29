@@ -1,7 +1,7 @@
 ---
-title: "ObjectLockRequest class | QSYS API Reference Guide"
+title: "ObjectLockRequest class       | QSYS API Reference Guide"
 description: "Provides facilities to Allocate and De-Allocate object related. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Provides facilities to Allocate and De-Allocate object related.

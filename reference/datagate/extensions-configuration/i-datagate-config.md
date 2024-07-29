@@ -1,7 +1,7 @@
 ---
-title: "IDataGateConfig interface | QSYS API Reference Guide"
+title: "IDataGateConfig interface     | QSYS API Reference Guide"
 description: "Provides an interface for accessing DataGate configuration. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:50Z
 ---
 
 Provides an interface for accessing DataGate configuration.
@@ -28,6 +28,10 @@ Provides an interface for accessing DataGate configuration.
 ### SourceProfile ResolveSourceName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Resolves a configured SourceProfile with behavior similar to the DatabaseName.ToSourceProfile methods for traditional database names.
+
+
+#### Remarks
+This method is used to resolve a SourceProfile from its name. If the name is not found, it throws a NoDbNameException.
 
 ```cs
 SourceProfile ResolveSourceName(string name)

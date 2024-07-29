@@ -1,7 +1,8 @@
 ---
-title: "StringType enum | QSYS API Reference Guide"
+title: "StringType enum               | QSYS API Reference Guide"
 description: "Specifies the kind of message included in an exception message. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
+sitemap: false
 ---
 
 Specifies the kind of message included in an exception message.

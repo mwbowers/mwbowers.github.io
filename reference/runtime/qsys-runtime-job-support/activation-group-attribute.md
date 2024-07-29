@@ -1,7 +1,7 @@
 ---
-title: "ActivationGroupAttribute class | QSYS API Reference Guide"
+title: "ActivationGroupAttribute class"
 description: "Defines the Activation Group Attribute used to mark a program or service program class. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Defines the Activation Group Attribute used to mark a program or service program class.

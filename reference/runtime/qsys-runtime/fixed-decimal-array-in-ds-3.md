@@ -1,7 +1,7 @@
 ---
 title: "FixedDecimalArrayInDS&lt;T1, T2, T3&gt; struct"
 description: "Describes a fixed size array of FixedDecimal contained in a DataStructure. "
-last_modified_at: 2024-07-10T21:22:30Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Describes a fixed size array of FixedDecimal contained in a DataStructure.

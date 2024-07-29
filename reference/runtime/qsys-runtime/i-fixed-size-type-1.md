@@ -1,7 +1,7 @@
 ---
 title: "IFixedSizeType&lt;T&gt; interface   | QSYS API Reference Guide"
 description: "Declares the basic functionality of a fixed-size generic type. "
-last_modified_at: 2024-07-10T21:22:30Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Declares the basic functionality of a fixed-size generic type.

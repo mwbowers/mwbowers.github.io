@@ -1,7 +1,7 @@
 ---
-title: "QueryFileNotOpenException class | QSYS API Reference Guide"
+title: "QueryFileNotOpenException class"
 description: "Query File -filename- is not open exception. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Query File -filename- is not open exception.

@@ -1,7 +1,7 @@
 ---
-title: "RowAddedEventArgs class | QSYS API Reference Guide"
+title: "RowAddedEventArgs class       | QSYS API Reference Guide"
 description: "Holds information that the RowAddedEvent requires. "
-last_modified_at: 2024-07-09T17:00:50Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Holds information that the RowAddedEvent requires.

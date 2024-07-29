@@ -1,7 +1,7 @@
 ---
-title: "UnlockedDataAreaException class | QSYS API Reference Guide"
+title: "UnlockedDataAreaException class"
 description: "DataArea Exception issued when attempting to unlock a DataArea that is not locked. "
-last_modified_at: 2024-07-09T17:00:50Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 DataArea Exception issued when attempting to unlock a DataArea that is not locked.

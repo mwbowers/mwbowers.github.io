@@ -1,7 +1,7 @@
 ---
-title: "CommonProgram class | QSYS API Reference Guide"
+title: "CommonProgram class           | QSYS API Reference Guide"
 description: "Defines the core behavior of programs and service programs. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Defines the core behavior of programs and service programs.
@@ -47,6 +47,8 @@ CommonProgram(CommonProgram)
 | Signature | Description |
 | --- | --- |
 | [Dispose](#void-disposebool-disposing)([Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean)) | Called to release the managed and unmanaged resources used by the current instance of the CommonProgram class.
+| [GetModule<T>()](#t-getmodule-t) | Gets a constituent module of this program.
+| [GetServiceModule<T>()](#t-getservicemodule-t) | Gets a constituent module of one of the service programs being used by this program.
 
 ### void Dispose([bool disposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
@@ -61,3 +63,19 @@ void Dispose(bool disposing)
 | Type | Parameter name | Description
 | --- | --- | ---
 | [Boolean](https://docs.microsoft.com/en-us/dotnet/api/system.boolean) | disposing | true to release managed and unmanaged resources; false to release only unmanaged resources.
+
+### T GetModule<T>()
+
+Gets a constituent module of this program.
+
+```cs
+T GetModule<T>()
+```
+
+### T GetServiceModule<T>()
+
+Gets a constituent module of one of the service programs being used by this program.
+
+```cs
+T GetServiceModule<T>()
+```

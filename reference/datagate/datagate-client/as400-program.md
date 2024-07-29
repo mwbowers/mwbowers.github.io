@@ -1,7 +1,7 @@
 ---
-title: "As400Program class | QSYS API Reference Guide"
+title: "As400Program class            | QSYS API Reference Guide"
 description: "Represents a program in the ASNA DataGate client. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Represents a program in the ASNA DataGate client.
@@ -101,6 +101,10 @@ As400Program(AdgConnection, String)
 
 Appends a parameter to the program.
 
+
+#### Remarks
+This method appends a parameter to the program in the ASNA DataGate client. It checks if the provided parameter is null, and if so, throws an ArgumentNullException. It then adds the parameter to the list of parameters for the program.
+
 ```cs
 void AppendParm(ProgParm parameter)
 ```
@@ -114,6 +118,10 @@ void AppendParm(ProgParm parameter)
 ### void AppendParms([ProgParm\[\] parameters](/reference/datagate/datagate-data-link/prog-parm.html))
 
 Appends an array of parameters to the program.
+
+
+#### Remarks
+This method appends an array of parameters to the program in the ASNA DataGate client. It checks if the provided array is null, and if so, throws an ArgumentNullException. It then iterates over the array and appends each parameter to the program using the AppendParm method.
 
 ```cs
 void AppendParms(ProgParm[] parameters)
@@ -129,6 +137,10 @@ void AppendParms(ProgParm[] parameters)
 
 Releases all resources used by the current instance of the  class.
 
+
+#### Remarks
+This method calls the Dispose method with the isDisposing parameter set to true, indicating that the method has been called directly or indirectly by a user's code. Then it requests that the common language runtime not call the finalizer for the specified object.
+
 ```cs
 void Dispose()
 ```
@@ -136,6 +148,10 @@ void Dispose()
 ### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Releases the unmanaged resources used by the  and optionally releases the managed resources.
+
+
+#### Remarks
+This method is called by the public Dispose() method and the Finalize method. Dispose() invokes the protected Dispose() method with the isDisposing parameter set to true. Finalize invokes Dispose with isDisposing set to false.When the isDisposing parameter is true, this method releases all resources held by any managed objects that this As400Program references. This method invokes the Dispose() method of each referenced object.
 
 ```cs
 void Dispose(bool isDisposing)
@@ -151,6 +167,10 @@ void Dispose(bool isDisposing)
 
 Executes the program with the current parameters.
 
+
+#### Remarks
+This method executes the program in the ASNA DataGate client. It first checks if the program path is null or empty, and if so, throws an InvalidOperationException. It then creates a new ParmExchanger with the current parameters and calls the program with the ParmExchanger. The ParmExchanger writes the parameters to the data link before the program is called and reads the parameters from the data link after the program is called.
+
 ```cs
 void Execute()
 ```
@@ -158,6 +178,10 @@ void Execute()
 ### void Finalize()
 
 Finalizes an instance of the  class.
+
+
+#### Remarks
+This finalizer calls the Dispose method with the isDisposing parameter set to false, indicating that the method has been called by the runtime and not from the Dispose method.
 
 ```cs
 void Finalize()
@@ -167,6 +191,10 @@ void Finalize()
 
 Gets the parameters of the program.
 
+
+#### Remarks
+This method returns a read-only collection of the parameters of the program in the ASNA DataGate client. The parameters are stored in a list, which is converted to a read-only collection before being returned.
+
 ```cs
 IEnumerable<ProgParm> GetParameters()
 ```
@@ -174,6 +202,10 @@ IEnumerable<ProgParm> GetParameters()
 ### ProgParm GetParmByName([string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Gets the parameter with the specified name.
+
+
+#### Remarks
+This method returns the parameter with the specified name in the ASNA DataGate client. The name comparison is case-insensitive. If no such parameter exists, it returns null.
 
 ```cs
 ProgParm GetParmByName(string name)
@@ -195,6 +227,10 @@ ProgParm GetParmByName(string name)
 
 Converts the specified object to a parameter of the specified type.
 
+
+#### Remarks
+This method converts the specified object to a parameter of the specified type in the ASNA DataGate client. It checks if the provided parameter is null or has no metadata, and if so, throws an exception. It also checks if the parameter is structured, and if so, throws an exception. It then creates a new SubParmName with the specified element index and calls the FromObject method of the parameter with the SubParmName and the object.
+
 ```cs
 void ObjectToParm(ProgParm parameter, object value, int element)
 ```
@@ -211,6 +247,10 @@ void ObjectToParm(ProgParm parameter, object value, int element)
 
 Converts the specified object to a parameter.
 
+
+#### Remarks
+This method converts the specified object to a parameter in the ASNA DataGate client. It checks if the provided parameter is null or has no metadata, and if so, throws an exception. It also checks if the parameter is structured, and if so, throws an exception. It then calls the ObjectToParm method with the parameter, object, and an element index of 0.
+
 ```cs
 void ObjectToParm(ProgParm parameter, object value)
 ```
@@ -225,6 +265,10 @@ void ObjectToParm(ProgParm parameter, object value)
 ### void ObjectToParm([object value](https://docs.microsoft.com/en-us/dotnet/api/system.object), [string parameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Int32\[\] elementIndices](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Converts the specified object to a parameter of the specified name and element indices.
+
+
+#### Remarks
+This method converts the specified object to a parameter of the specified name and element indices in the ASNA DataGate client. It checks if the provided parameter name is null, and if so, throws an ArgumentNullException. It then creates a new SubParmName with the specified parameter name and element indices, and gets the parameter with the name from the SubParmName. If no such parameter exists, it throws an ArgumentException. It then calls the FromObject method of the parameter with the SubParmName and the object.
 
 ```cs
 void ObjectToParm(object value, string parameterName, Int32[] elementIndices)
@@ -242,6 +286,10 @@ void ObjectToParm(object value, string parameterName, Int32[] elementIndices)
 
 Converts the specified object to a parameter of the specified name.
 
+
+#### Remarks
+This method converts the specified object to a parameter of the specified name in the ASNA DataGate client. It calls the ObjectToParm method with the object, parameter name, and an empty array of element indices.
+
 ```cs
 void ObjectToParm(object value, string parameterName)
 ```
@@ -256,6 +304,10 @@ void ObjectToParm(object value, string parameterName)
 ### object ParmToObject([ProgParm parameter](/reference/datagate/datagate-data-link/prog-parm.html), [Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [int element](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Converts the specified parameter to an object of the specified type.
+
+
+#### Remarks
+This method converts the specified parameter to an object of the specified type in the ASNA DataGate client. It checks if the provided parameter is null or has no metadata, and if so, throws an exception. It also checks if the parameter is structured, and if so, throws an exception. It then creates a new SubParmName with the specified element index and calls the ToObject method of the parameter with the SubParmName.
 
 ```cs
 object ParmToObject(ProgParm parameter, Type returnType, int element)
@@ -279,6 +331,10 @@ object ParmToObject(ProgParm parameter, Type returnType, int element)
 
 Converts the specified parameter to an object of the specified type.
 
+
+#### Remarks
+This method converts the specified parameter to an object of the specified type in the ASNA DataGate client. It checks if the provided parameter is null or has no metadata, and if so, throws an exception. It also checks if the parameter is structured, and if so, throws an exception. It then creates a new SubParmName with the specified element index and calls the ToObject method of the parameter with the SubParmName.
+
 ```cs
 object ParmToObject(ProgParm Parameter, Type ReturnType)
 ```
@@ -299,6 +355,10 @@ object ParmToObject(ProgParm Parameter, Type ReturnType)
 ### object ParmToObject([Type returnType](https://docs.microsoft.com/en-us/dotnet/api/system.type), [string parameterName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Int32\[\] elementIndices](https://docs.microsoft.com/en-us/dotnet/api/system.int32))
 
 Converts the specified parameter to an object of the specified type.
+
+
+#### Remarks
+This method converts the specified parameter to an object of the specified type in the ASNA DataGate client. It checks if the provided parameter name is null, and if so, throws an ArgumentNullException. It then creates a new SubParmName with the specified parameter name and element indices, and gets the parameter with the name from the SubParmName. If no such parameter exists, it throws an ArgumentException. It then calls the ToObject method of the parameter with the SubParmName and the type.
 
 ```cs
 object ParmToObject(Type returnType, string parameterName, Int32[] elementIndices)
@@ -322,6 +382,10 @@ object ParmToObject(Type returnType, string parameterName, Int32[] elementIndice
 
 Converts the specified parameter to an object of the specified type.
 
+
+#### Remarks
+This method converts the specified parameter to an object of the specified type in the ASNA DataGate client. It calls the ParmToObject method with the type, parameter name, and an empty array of element indices.
+
 ```cs
 object ParmToObject(Type ReturnType, string ParameterName)
 ```
@@ -343,6 +407,10 @@ object ParmToObject(Type ReturnType, string ParameterName)
 
 Reads the parameters of the program from an XML reader.
 
+
+#### Remarks
+This method reads the parameters of the program in the ASNA DataGate client from an XML reader. It checks if the provided XML reader is null, and if so, throws an ArgumentNullException. It also checks if the read state of the XML reader is not Initial, and if so, throws an ArgumentException. It then reads the "apcml" and "program" elements from the XML. If the "program" element is not found, it throws an XmlException. It then reads the name attribute of the "program" element and creates a new list of parameters. It then reads each parameter from the XML using the ProgParm constructor, appends it to the list, and creates a new buffer for it. It then reads the end of the "program" and "apcml" elements and closes the XML reader, and sets the program name and parameters to the new values.
+
 ```cs
 void ReadParmXml(XmlReader reader)
 ```
@@ -356,6 +424,10 @@ void ReadParmXml(XmlReader reader)
 ### void SetConnection([AdgConnection value](/reference/datagate/datagate-client/adg-connection.html))
 
 Sets the connection to be used by the program.
+
+
+#### Remarks
+This method sets the connection for the ASNA DataGate client. The provided connection is checked for null before being set.
 
 ```cs
 void SetConnection(AdgConnection value)
@@ -371,6 +443,10 @@ void SetConnection(AdgConnection value)
 
 Sets all parameters of the program to their zero value.
 
+
+#### Remarks
+This method sets all parameters of the program in the ASNA DataGate client to their zero value. It iterates over the list of parameters and calls the SetZeroValue method of each parameter.
+
 ```cs
 void SetParmsZeroValue()
 ```
@@ -378,6 +454,10 @@ void SetParmsZeroValue()
 ### void SetProgramPath([string value](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Sets the path of the program to be executed.
+
+
+#### Remarks
+This method sets the program path for the ASNA DataGate client. The provided path is converted to upper case invariant culture before being set.
 
 ```cs
 void SetProgramPath(string value)
@@ -392,6 +472,10 @@ void SetProgramPath(string value)
 ### void WriteParmXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0))
 
 Writes the parameters of the program to an XML writer.
+
+
+#### Remarks
+This method writes the parameters of the program in the ASNA DataGate client to an XML writer. It checks if the provided XML writer is null, and if so, throws an ArgumentNullException. It also checks if the write state of the XML writer is not Start, and if so, throws an ArgumentException. It then writes the start of the document, the start of the "apcml" element with the appropriate namespace and version attribute, the start of the "program" element with the program name attribute, and the XML representation of each parameter using the WriteXml method of the parameter. It then writes the end of the "program" and "apcml" elements and the end of the document, and closes the XML writer.
 
 ```cs
 void WriteParmXml(XmlWriter writer)

@@ -1,7 +1,7 @@
 ---
-title: "AdgDataSet class | QSYS API Reference Guide"
+title: "AdgDataSet class              | QSYS API Reference Guide"
 description: "A DataGate-compatible DataSet class for record-oriented database access. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 A DataGate-compatible DataSet class for record-oriented database access.
@@ -93,6 +93,10 @@ AdgDataSet(String)
 
 Adds a prepared row to the DataTable associated with the specified format index and sets it as the active row.
 
+
+#### Remarks
+This method is used to add a prepared row to a specific DataTable in the AdgDataSet and set it as the active row.The method retrieves the AdgTable instance from the AdgTable dictionary using the provided format index and calls its AddRow method to add a new row.Then, it sets the NewFormatIndex to the provided format index and calls the SetActive method with the index of the last row in the DataTable to set the new row as the active row.The SetActive method returns true if the active row was successfully set; otherwise, it returns false.This method is used in scenarios where a prepared row needs to be added to a DataTable and set as the active row based on its format index.
+
 ```cs
 bool AddPreparedRowAndSetActive(int iFormat)
 ```
@@ -113,6 +117,10 @@ bool AddPreparedRowAndSetActive(int iFormat)
 
 Adds a new row to the DataTable associated with the specified format name.
 
+
+#### Remarks
+This method is used to add a new row to a specific DataTable in the AdgDataSet.The method first calls the GetFormatIndex method with the provided format name to retrieve the corresponding format index.Then, it calls the AddRow method with the retrieved format index to add a new row.The AddRow method retrieves the AdgTable instance from the AdgTable dictionary using the format index and calls its AddRow method to add a new row.This method is used in scenarios where a new row needs to be added to a DataTable based on its format name.
+
 ```cs
 void AddRow(string strFormat)
 ```
@@ -127,6 +135,10 @@ void AddRow(string strFormat)
 
 Adds a new row to the DataTable associated with the specified format index.
 
+
+#### Remarks
+This method is used to add a new row to a specific DataTable in the AdgDataSet.The method retrieves the AdgTable instance from the AdgTable dictionary using the provided format index and calls its AddRow method to add a new row.The AddRow method of the AdgTable instance creates a new row, sets the default values for the new row, and adds it to the DataTable.This method is used in scenarios where a new row needs to be added to a DataTable based on its format index.
+
 ```cs
 void AddRow(int iFormat)
 ```
@@ -140,6 +152,10 @@ void AddRow(int iFormat)
 ### bool ContainsKey([int key](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Determines whether the AdgDataSet contains an AdgTable with the specified format index.
+
+
+#### Remarks
+This method is used to determine whether the AdgDataSet contains an AdgTable with a specific format index.The method calls the ContainsKey method of the AdgTable dictionary with the provided format index and returns the result.This method is used in scenarios where it needs to be checked whether an AdgTable with a specific format index exists in the AdgDataSet.
 
 ```cs
 bool ContainsKey(int key)
@@ -161,6 +177,10 @@ bool ContainsKey(int key)
 
 Deletes the row at the specified relative record number (rrn) in the DataTable associated with the specified format name.
 
+
+#### Remarks
+This method is used to delete a specific row in a DataTable in the AdgDataSet.The method first calls the SetActive method with the provided format name and rrn to set the active row to the specified row.If the SetActive method returns false, indicating that the specified row could not be found, an ArgumentException is thrown.Otherwise, the method retrieves the AdgTable instance from the AdgTable dictionary using the CurrentFormatIndex and calls its Delete method with the active row.This method is used in scenarios where a specific row in a DataTable needs to be deleted based on its format name and rrn.
+
 ```cs
 void DeleteRow(string strFormat, int rrn)
 ```
@@ -176,6 +196,10 @@ void DeleteRow(string strFormat, int rrn)
 
 Returns an enumerator that iterates through the AdgDataSet.
 
+
+#### Remarks
+This method is used to get an enumerator that iterates through the AdgDataSet.The method returns the enumerator of the AdgTable dictionary which contains all the AdgTable instances in the AdgDataSet.This method is used in scenarios where it needs to be iterated over all the AdgTable instances in the AdgDataSet, such as when using a foreach loop.
+
 ```cs
 IEnumerator<KeyValuePair<int, AdgTable>> GetEnumerator()
 ```
@@ -183,6 +207,10 @@ IEnumerator<KeyValuePair<int, AdgTable>> GetEnumerator()
 ### int GetFormatIndex([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Retrieves the format index associated with the specified format name.
+
+
+#### Remarks
+This method is used to retrieve the format index associated with a specific format name in the AdgDataSet.The format index corresponds to a specific format for the data in a DataTable.The method iterates over the format strings array and returns the index of the first occurrence of the provided format name.If the format name is not found in the format strings array, a dgException is thrown.This method is used in various methods like GetFormatTable, SetActive, and AddRow where a specific format index is required based on its format name.
 
 ```cs
 int GetFormatIndex(string strFormat)
@@ -204,6 +232,10 @@ int GetFormatIndex(string strFormat)
 
 Retrieves the format name associated with the specified format index.
 
+
+#### Remarks
+This method is used to retrieve the format name for a specific format index in the AdgDataSet.The method first checks if the format strings array is null or if the provided format index is out of range.If the format strings array is null or the format index is out of range, the method throws a dgException with the dgEaNOCURR error number and an ArgumentOutOfRangeException.Otherwise, the method returns the format name from the format strings array at the provided format index.This method is used in scenarios where the format name needs to be retrieved based on its format index.
+
 ```cs
 string GetFormatName(int iFormat)
 ```
@@ -223,6 +255,10 @@ string GetFormatName(int iFormat)
 ### DataTable GetFormatTable([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Retrieves the DataTable associated with the specified format index.
+
+
+#### Remarks
+This method is used to retrieve the DataTable associated with a specific format index in the AdgDataSet.The format index corresponds to a specific format for the data in a DataTable.If the format index is less than 0 or greater than or equal to the total number of formats, a dgException is thrown.Otherwise, the method retrieves the AdgTable instance from the AdgTable dictionary using the format index and returns its DataTable.This method is used in various methods like SetActive, PrepareRow, and AddRow where a specific DataTable is required based on its format index.
 
 ```cs
 DataTable GetFormatTable(int iFormat)
@@ -244,6 +280,10 @@ DataTable GetFormatTable(int iFormat)
 
 Retrieves the DataTable associated with the specified format name.
 
+
+#### Remarks
+This method is used to retrieve the DataTable associated with a specific format name in the AdgDataSet.The format name corresponds to a specific format for the data in a DataTable.The method first calls the GetFormatIndex method with the provided format name to retrieve the corresponding format index.Then, it calls the GetFormatTable method with the retrieved format index to get the DataTable.This method is used in various methods where a specific DataTable is required based on its format name.
+
 ```cs
 DataTable GetFormatTable(string strFormat)
 ```
@@ -264,6 +304,10 @@ DataTable GetFormatTable(string strFormat)
 
 Initializes the instance of the  class.
 
+
+#### Remarks
+This method is intended to be overridden in derived classes to provide custom initialization logic.It is called in the constructors and deserialization methods of the  class.The specific implementation of this method in a derived class should initialize any additional properties or fields that are not initialized in the base class.
+
 ```cs
 void Initialize()
 ```
@@ -271,6 +315,10 @@ void Initialize()
 ### void InitializeCommon()
 
 Initializes common elements of the  instance.
+
+
+#### Remarks
+This method is used to initialize common elements of the  instance, such as the format strings and AdgTable instances.If the Tables collection is empty, it sets the format strings array and the key tables templates array to null and returns.Otherwise, it parses the count of formats from the ExtendedProperties and initializes the format strings array with this count.It then iterates over each DataTable in the Tables collection, retrieves the format name from the ExtendedProperties, and stores it in the format strings array.If the AdgTable dictionary does not contain an entry for the format index, it creates a new AdgTable instance for the DataTable and adds it to the dictionary.Finally, it sets the Formats property to the length of the format strings array, initializes the key tables templates array with the count of formats, and resets the CurrentFormatIndex.This method is called in the constructors and deserialization methods of the  class.
 
 ```cs
 void InitializeCommon()
@@ -280,6 +328,10 @@ void InitializeCommon()
 
 Initializes the format strings of the  instance.
 
+
+#### Remarks
+This method is intended to be overridden in derived classes to provide custom initialization logic for the format strings.The format strings represent the specific formats for the data in each DataTable in the AdgDataSet.The specific implementation of this method in a derived class should parse the format strings from the DataTables and store them in the format strings array.It is called in the constructors and deserialization methods of the  class.
+
 ```cs
 void InitializeFormats()
 ```
@@ -287,6 +339,10 @@ void InitializeFormats()
 ### void InsertRow([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Inserts a new row at the specified relative record number (rrn) in the DataTable associated with the specified format name.
+
+
+#### Remarks
+This method is used to insert a new row at a specific position in a DataTable in the AdgDataSet.The method first calls the GetFormatIndex method with the provided format name to retrieve the corresponding format index.Then, it calls the InsertRow method with the retrieved format index and the provided rrn to insert a new row.The InsertRow method retrieves the AdgTable instance from the AdgTable dictionary using the format index and calls its InsertRow method with the provided rrn.This method is used in scenarios where a new row needs to be inserted at a specific position in a DataTable based on its format name and rrn.
 
 ```cs
 void InsertRow(string strFormat, int rrn)
@@ -303,6 +359,10 @@ void InsertRow(string strFormat, int rrn)
 
 Inserts a new row at the specified relative record number (rrn) in the DataTable associated with the specified format index.
 
+
+#### Remarks
+This method is used to insert a new row at a specific position in a DataTable in the AdgDataSet.The method retrieves the AdgTable instance from the AdgTable dictionary using the provided format index and calls its InsertRow method with the provided rrn.The InsertRow method of the AdgTable instance creates a new row, sets the default values for the new row, and inserts it at the specified rrn in the DataTable.This method is used in scenarios where a new row needs to be inserted at a specific position in a DataTable based on its format index and rrn.
+
 ```cs
 void InsertRow(int iFormat, int rrn)
 ```
@@ -317,6 +377,10 @@ void InsertRow(int iFormat, int rrn)
 ### AdgKeyTable NewKeyTable([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Creates a new AdgKeyTable for the DataTable associated with the specified format index.
+
+
+#### Remarks
+This method is used to create a new AdgKeyTable for a specific DataTable in the AdgDataSet.The method calls the NewKeyTable method with the provided format index and a discard out variable to create a new AdgKeyTable.The NewKeyTable method retrieves the AdgTable instance from the AdgTable dictionary using the format index, creates a new AdgKeyTable, and sets the key row in the AdgKeyTable to a new row in the DataTable.This method is used in scenarios where a new AdgKeyTable needs to be created for a DataTable based on its format index.
 
 ```cs
 AdgKeyTable NewKeyTable(int iFormat)
@@ -338,6 +402,10 @@ AdgKeyTable NewKeyTable(int iFormat)
 
 Creates a new AdgKeyTable for the DataTable associated with the specified format name.
 
+
+#### Remarks
+This method is used to create a new AdgKeyTable for a specific DataTable in the AdgDataSet.The method calls the NewKeyTable method with the provided format name and a discard out variable to create a new AdgKeyTable.The NewKeyTable method calls the GetFormatIndex method with the provided format name to retrieve the corresponding format index, and creates a new AdgKeyTable for the DataTable associated with the format index.This method is used in scenarios where a new AdgKeyTable needs to be created for a DataTable based on its format name.
+
 ```cs
 AdgKeyTable NewKeyTable(string strFormat)
 ```
@@ -357,6 +425,10 @@ AdgKeyTable NewKeyTable(string strFormat)
 ### DataRow PrepareRow([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Prepares a new row for the DataTable associated with the specified format name.
+
+
+#### Remarks
+This method is used to prepare a new row for a specific DataTable in the AdgDataSet.The method first calls the GetFormatIndex method with the provided format name to retrieve the corresponding format index.Then, it calls the PrepareRow method with the retrieved format index to prepare a new row.The PrepareRow method retrieves the AdgTable instance from the AdgTable dictionary using the format index, calls its PrepareRow method to create a new row, and sets the active row to the new row.This method is used in various methods like AddRow, InsertRow, and SetActive where a new row needs to be prepared for a DataTable based on its format name.
 
 ```cs
 DataRow PrepareRow(string strFormat)
@@ -378,6 +450,10 @@ DataRow PrepareRow(string strFormat)
 
 Prepares the specified row for the DataTable associated with the specified format name.
 
+
+#### Remarks
+This method is used to prepare a specific row for a DataTable in the AdgDataSet.The method first calls the GetFormatIndex method with the provided format name to retrieve the corresponding format index.Then, it retrieves the AdgTable instance from the AdgTable dictionary using the retrieved format index and calls its PrepareRow method with the provided row.The PrepareRow method of the AdgTable instance sets the default values for the row and sets the active row to the provided row.This method is used in scenarios where a specific row in a DataTable needs to be prepared based on its format name.
+
 ```cs
 void PrepareRow(string strFormat, DataRow row)
 ```
@@ -392,6 +468,10 @@ void PrepareRow(string strFormat, DataRow row)
 ### DataRow PrepareRow([int iFormat](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Prepares a new row for the DataTable associated with the specified format index.
+
+
+#### Remarks
+This method is used to prepare a new row for a specific DataTable in the AdgDataSet.The method retrieves the AdgTable instance from the AdgTable dictionary using the provided format index and calls its PrepareRow method to create a new row.The PrepareRow method of the AdgTable instance sets the default values for the new row and sets the active row to the new row.This method is used in various methods like AddRow, InsertRow, and SetActive where a new row needs to be prepared for a DataTable based on its format index.
 
 ```cs
 DataRow PrepareRow(int iFormat)
@@ -413,6 +493,10 @@ DataRow PrepareRow(int iFormat)
 
 Sets the active row to the row at the specified relative record number (rrn) in the DataTable associated with the specified format index.
 
+
+#### Remarks
+This method is used to set the active row in a DataTable in the AdgDataSet.If the provided format index is less than 0, the method calls the SetActive method with the provided rrn to set the active row in the DataTable associated with the CurrentFormatIndex.Otherwise, the method retrieves the AdgTable instance from the AdgTable dictionary using the provided format index and calls the SetActiveInternal method with the AdgTable instance, the format index, and the rrn.The SetActiveInternal method sets the active row in the DataTable associated with the provided format index to the row at the provided rrn.This method is used in various methods like AddRow, InsertRow, and DeleteRow where the active row needs to be set based on a format index and rrn.
+
 ```cs
 bool SetActive(int iFormat, int rrn)
 ```
@@ -433,6 +517,10 @@ bool SetActive(int iFormat, int rrn)
 ### bool SetActive([string strFormat](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [int rrn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Sets the active row to the row at the specified relative record number (rrn) in the DataTable associated with the specified format name.
+
+
+#### Remarks
+This method is used to set the active row in a DataTable in the AdgDataSet.If the provided format name is null or empty, the method calls the SetActive method with the provided rrn to set the active row in the DataTable associated with the CurrentFormatIndex.Otherwise, the method calls the GetFormatIndex method with the provided format name to retrieve the corresponding format index and calls the SetActive method with the format index and the rrn.The SetActive method sets the active row in the DataTable associated with the provided format index to the row at the provided rrn.This method is used in various methods like AddRow, InsertRow, and DeleteRow where the active row needs to be set based on a format name and rrn.
 
 ```cs
 bool SetActive(string strFormat, int rrn)

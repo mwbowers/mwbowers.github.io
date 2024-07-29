@@ -1,7 +1,7 @@
 ---
-title: "DbXmlNameConverter class | QSYS API Reference Guide"
+title: "DbXmlNameConverter class      | QSYS API Reference Guide"
 description: "This class is a filter used in the XML transforms ExportToXml.xslt and ImportToXml.xslt.  Encode() takes an arbitrary string and returns an XML-compli"
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 This class is a filter used in the XML transforms ExportToXml.xslt and
@@ -34,6 +34,10 @@ XML-compliant Name string.  For example, "$ITEMTEST" is returned as
 
 Decodes the provided XML-compliant string back into its original name.
 
+
+#### Remarks
+This method uses the  method to perform the actual decoding.Before the decoding, it checks if the provided context is null. If it is, an  is thrown.The  method uses the  method to decode the name, and handles any exceptions that might be thrown during the decoding.
+
 ```cs
 string Decode(XPathNavigator context, string name)
 ```
@@ -54,6 +58,10 @@ string Decode(XPathNavigator context, string name)
 ### string Encode([XPathNavigator context](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xpath.xpathnavigator?view=net-8.0), [string name](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Encodes the provided name into an XML-compliant string.
+
+
+#### Remarks
+This method uses the  method to perform the actual encoding.Before the encoding, it checks if the provided context is null. If it is, an  is thrown.The  method uses the  method to encode the name, and handles any exceptions that might be thrown during the encoding.
 
 ```cs
 string Encode(XPathNavigator context, string name)

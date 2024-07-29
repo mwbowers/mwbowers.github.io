@@ -1,7 +1,7 @@
 ---
-title: "OpenOptions enum | QSYS API Reference Guide"
+title: "OpenOptions enum              | QSYS API Reference Guide"
 description: "Defines options for opening a connection. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Defines options for opening a connection.

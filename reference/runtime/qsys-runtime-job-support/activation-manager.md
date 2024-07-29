@@ -1,7 +1,7 @@
 ---
-title: "ActivationManager class | QSYS API Reference Guide"
+title: "ActivationManager class       | QSYS API Reference Guide"
 description: "Provides the facilities to manage the instances of programs and service programs. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 sitemap: false
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "MemberDecimalDescription enum | QSYS API Reference Guide"
 description: "Specifies a numerical member attribute. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
+sitemap: false
 ---
 
 Specifies a numerical member attribute.

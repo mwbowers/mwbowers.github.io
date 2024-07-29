@@ -1,7 +1,8 @@
 ---
-title: "TransactionLevel enum | QSYS API Reference Guide"
+title: "TransactionLevel enum         | QSYS API Reference Guide"
 description: "Specifies the transaction level for a database operation. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
+sitemap: false
 ---
 
 Specifies the transaction level for a database operation.

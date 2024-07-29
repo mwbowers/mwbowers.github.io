@@ -1,7 +1,7 @@
 ---
-title: "DatabaseAttributes class | QSYS API Reference Guide"
+title: "DatabaseAttributes class      | QSYS API Reference Guide"
 description: "Database properties, as reported by ISourceProvider.DatabaseAttributes. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Database properties, as reported by ISourceProvider.DatabaseAttributes.

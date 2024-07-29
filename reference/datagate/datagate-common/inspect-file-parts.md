@@ -1,7 +1,7 @@
 ---
-title: "InspectFileParts enum | QSYS API Reference Guide"
+title: "InspectFileParts enum         | QSYS API Reference Guide"
 description: "Specifies the parts of a file to inspect. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Specifies the parts of a file to inspect.

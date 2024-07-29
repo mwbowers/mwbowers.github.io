@@ -1,7 +1,7 @@
 ---
 title: "DdsTableRowTagHelper class    | QSYS API Reference Guide"
 description: "Defines a Subfile Row to be rendered as a standard Table line. "
-last_modified_at: 2024-07-10T21:34:30Z
+last_modified_at: 2024-07-29T18:38:13Z
 ---
 
 Defines a Subfile Row to be rendered as a standard Table line.

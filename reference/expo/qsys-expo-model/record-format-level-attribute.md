@@ -1,7 +1,7 @@
 ---
-title: "RecordFormatLevelAttribute class | QSYS API Reference Guide"
+title: "RecordFormatLevelAttribute class"
 description: "Defines the Record level value for a record in the class. "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Defines the Record level value for a record in the class.

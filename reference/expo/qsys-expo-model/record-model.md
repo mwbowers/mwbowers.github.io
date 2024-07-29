@@ -1,7 +1,7 @@
 ---
-title: "RecordModel class | QSYS API Reference Guide"
+title: "RecordModel class             | QSYS API Reference Guide"
 description: "Defines the RecordModel class "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Defines the RecordModel class

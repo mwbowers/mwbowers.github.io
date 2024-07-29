@@ -1,7 +1,7 @@
 ---
-title: "SourceProfileConverter class | QSYS API Reference Guide"
+title: "SourceProfileConverter class  | QSYS API Reference Guide"
 description: "The SourceProfileConverter class is responsible for converting source profiles. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The SourceProfileConverter class is responsible for converting source profiles.

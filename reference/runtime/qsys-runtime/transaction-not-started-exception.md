@@ -1,7 +1,7 @@
 ---
-title: "TransactionNotStartedException class | QSYS API Reference Guide"
+title: "TransactionNotStartedException class"
 description: "The transaction has not been started exception. "
-last_modified_at: 2024-07-09T17:00:50Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 The transaction has not been started exception.

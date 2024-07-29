@@ -1,7 +1,7 @@
 ---
-title: "PrintingProps class | QSYS API Reference Guide"
+title: "PrintingProps class           | QSYS API Reference Guide"
 description: "Represents the application settings for printing properties. This class is auto-generated and changes may be overwritten. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Represents the application settings for printing properties.
@@ -35,6 +35,10 @@ This class is auto-generated and changes may be overwritten.
 
 Retrieves the Renderer path from the application settings.
 
+
+#### Remarks
+This method retrieves the 'Renderer' property value from the application settings.If the property value is null or using its default value, the method returns the default Renderer path.
+
 ```cs
 string GetRendererPath()
 ```
@@ -43,6 +47,10 @@ string GetRendererPath()
 
 Checks if the Renderer path is missing in the application settings.
 
+
+#### Remarks
+This method checks the 'Renderer' property value in the application settings.If the property value is null, using its default value, or equal to the default value, the method returns true.Otherwise, it returns false.
+
 ```cs
 bool IsRendererPathMissing()
 ```
@@ -50,6 +58,10 @@ bool IsRendererPathMissing()
 ### void SetRendererPath([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [Configuration config](https://learn.microsoft.com/en-us/dotnet/api/system.configuration.configuration?view=net-8.0))
 
 Sets the Renderer path in the specified configuration.
+
+
+#### Remarks
+This method sets the 'Renderer' property value in the specified configuration.It retrieves the 'appSettings' section from the configuration, and then sets the new Renderer path.
 
 ```cs
 void SetRendererPath(string path, Configuration config)
@@ -65,6 +77,10 @@ void SetRendererPath(string path, Configuration config)
 ### void SetRendererPathInMachineConfig([string path](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Sets the Renderer path in the machine configuration.
+
+
+#### Remarks
+This method sets the 'Renderer' property value in the machine configuration.It opens the machine configuration, and then calls the SetRendererPath method to set the new Renderer path.
 
 ```cs
 void SetRendererPathInMachineConfig(string path)

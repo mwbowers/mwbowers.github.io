@@ -1,7 +1,7 @@
 ---
-title: "StringMethods class | QSYS API Reference Guide"
+title: "StringMethods class           | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations and conversions for string values. "
-last_modified_at: 2024-07-09T17:00:50Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Contains extension methods for handling RPG operations and conversions for string values.

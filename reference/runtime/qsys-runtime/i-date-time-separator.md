@@ -1,7 +1,7 @@
 ---
-title: "IDateTimeSeparator interface | QSYS API Reference Guide"
+title: "IDateTimeSeparator interface  | QSYS API Reference Guide"
 description: "Base interface for interfaces used as date/time separators in the declaration of date/time types. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 sitemap: false
 ---
 

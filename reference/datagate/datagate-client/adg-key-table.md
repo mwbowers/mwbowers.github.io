@@ -1,7 +1,7 @@
 ---
-title: "AdgKeyTable class | QSYS API Reference Guide"
+title: "AdgKeyTable class             | QSYS API Reference Guide"
 description: "The AdgKeyTable class contains a DataTable object for manipulating key values. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The AdgKeyTable class contains a DataTable object for manipulating key values.
@@ -53,6 +53,10 @@ AdgKeyTable(DataTable)
 ### bool Equals([DataRow other](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
 
 Determines whether the specified DataRow is equal to the current DataRow.
+
+
+#### Remarks
+This method uses the DataRowColumnComparer associated with this AdgKeyTable instance to compare the specified DataRow with the current DataRow.The DataRowColumnComparer compares the rows based on the first m_cParts columns of the DataTable associated with this AdgKeyTable instance.
 
 ```cs
 bool Equals(DataRow other)

@@ -1,7 +1,7 @@
 ---
-title: "InteractionStyles enum | QSYS API Reference Guide"
+title: "InteractionStyles enum        | QSYS API Reference Guide"
 description: "Determines how the user interacts with the component. "
-last_modified_at: 2024-07-09T17:01:12Z
+last_modified_at: 2024-07-29T18:38:13Z
 ---
 
 Determines how the user interacts with the component.

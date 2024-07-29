@@ -1,7 +1,7 @@
 ---
-title: "FloatMethods class | QSYS API Reference Guide"
+title: "FloatMethods class            | QSYS API Reference Guide"
 description: "Contains extension methods for handling RPG operations for floating point numbers. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Contains extension methods for handling RPG operations for floating point numbers.

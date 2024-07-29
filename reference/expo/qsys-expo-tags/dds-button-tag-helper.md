@@ -1,7 +1,7 @@
 ---
-title: "DdsButtonTagHelper class | QSYS API Reference Guide"
+title: "DdsButtonTagHelper class      | QSYS API Reference Guide"
 description: "Defines a clickable element that can be configured as a replacement of a DdsField.  "
-last_modified_at: 2024-07-09T17:01:12Z
+last_modified_at: 2024-07-29T18:38:13Z
 ---
 
 Defines a clickable element that can be configured as a replacement of a DdsField. 

@@ -1,7 +1,7 @@
 ---
-title: "IAdgObject interface | QSYS API Reference Guide"
+title: "IAdgObject interface          | QSYS API Reference Guide"
 description: "Defines the properties and methods for an ADG (ASNA DataGate) object. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Defines the properties and methods for an ADG (ASNA DataGate) object.
@@ -78,6 +78,10 @@ such as methods for managing authorities, locks, and XML serialization, and prop
 
 Creates the ADG object.
 
+
+#### Remarks
+This method is used to create the ADG object. It should be called after the properties of the object have been set, but before the object is used. This method may perform various initialization tasks, such as establishing a connection to the server or allocating resources.
+
 ```cs
 void Create()
 ```
@@ -85,6 +89,10 @@ void Create()
 ### void Duplicate([string ScopePath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string TargetPath](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [string NewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [DuplicateOptions options](/reference/datagate/datagate-common/duplicate-options.html))
 
 Duplicates the ADG object.
+
+
+#### Remarks
+This method is used to create a duplicate of the ADG object. The ScopePath parameter specifies the path of the object to duplicate. The TargetPath parameter specifies the path where the duplicate object will be placed. The NewName parameter specifies the name for the duplicate object. The options parameter specifies the options for the duplication operation, such as whether to overwrite existing objects.
 
 ```cs
 void Duplicate(string ScopePath, string TargetPath, string NewName, DuplicateOptions options)
@@ -103,6 +111,10 @@ void Duplicate(string ScopePath, string TargetPath, string NewName, DuplicateOpt
 
 Grants authority to a user or group for the ADG object.
 
+
+#### Remarks
+This method is used to grant a specific authority to a user or group for the ADG object. The user parameter specifies the user or group to grant the authority to. The authority parameter specifies the authority to grant, which can be read, write, execute, or other types of authority.
+
 ```cs
 void GrantAuthority(string user, AuthorityTypes authority)
 ```
@@ -117,6 +129,10 @@ void GrantAuthority(string user, AuthorityTypes authority)
 ### bool HasLock([ShareTypes ShareType](/reference/datagate/datagate-common/share-types.html))
 
 Determines whether the ADG object has a lock of the specified type.
+
+
+#### Remarks
+This method is used to check if the ADG object has a lock of the specified type. The ShareType parameter specifies the type of lock to check for, which can be read, write, or other types of locks. This can be useful for managing concurrent access to the object.
 
 ```cs
 bool HasLock(ShareTypes ShareType)
@@ -138,6 +154,10 @@ bool HasLock(ShareTypes ShareType)
 
 Locks the ADG object with the specified share type and wait option.
 
+
+#### Remarks
+This method is used to apply a lock of the specified type to the ADG object. The ShareType parameter specifies the type of lock to apply, which can be read, write, or other types of locks. The WaitOption parameter specifies what to do if the lock cannot be immediately acquired, such as waiting for the lock to become available or throwing an exception.
+
 ```cs
 void Lock(ShareTypes ShareType, WaitOptions WaitOption, short WaitTime)
 ```
@@ -154,6 +174,10 @@ void Lock(ShareTypes ShareType, WaitOptions WaitOption, short WaitTime)
 
 Moves the ADG object to a new path.
 
+
+#### Remarks
+This method is used to move the ADG object to a new path. The NewPathName parameter specifies the new path for the object. This can be useful for organizing objects or for changing the location of an object without changing its contents.
+
 ```cs
 void MoveTo(string NewPathName)
 ```
@@ -167,6 +191,10 @@ void MoveTo(string NewPathName)
 ### void ReadBases([XmlReader reader](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0))
 
 Reads the base objects of the ADG object from an XML reader.
+
+
+#### Remarks
+This method is used to read the base objects of the ADG object from an XML reader. The reader parameter specifies the XML reader to read from. This can be useful for deserializing the object's state from XML.
 
 ```cs
 void ReadBases(XmlReader reader)
@@ -182,6 +210,10 @@ void ReadBases(XmlReader reader)
 
 Removes the ADG object.
 
+
+#### Remarks
+This method is used to remove the ADG object. This can be useful for cleaning up resources or for deleting an object that is no longer needed.
+
 ```cs
 void Remove()
 ```
@@ -189,6 +221,10 @@ void Remove()
 ### void Rename([string NewName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Renames the ADG object.
+
+
+#### Remarks
+This method is used to rename the ADG object. The NewName parameter specifies the new name for the object. This can be useful for changing the name of an object without changing its contents or location.
 
 ```cs
 void Rename(string NewName)
@@ -204,6 +240,10 @@ void Rename(string NewName)
 
 Resolves the path name of the ADG object.
 
+
+#### Remarks
+This method is used to resolve the path name of the ADG object. The path name is resolved according to the rules of the database where the object is stored. This can be useful for obtaining the absolute path of the object, especially if the object was specified with a relative path.
+
 ```cs
 string ResolvePathName()
 ```
@@ -211,6 +251,10 @@ string ResolvePathName()
 ### void RevokeAuthority([string userName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [AuthorityTypes authorityType](/reference/datagate/datagate-common/authority-types.html))
 
 Revokes a specific authority from a user for the ADG object.
+
+
+#### Remarks
+This method is used to revoke a specific authority from a user for the ADG object. The userName parameter specifies the user to revoke the authority from. The authorityType parameter specifies the type of authority to revoke, which can be read, write, execute, or other types of authority.
 
 ```cs
 void RevokeAuthority(string userName, AuthorityTypes authorityType)
@@ -227,6 +271,10 @@ void RevokeAuthority(string userName, AuthorityTypes authorityType)
 
 Returns a string that represents the ADG object.
 
+
+#### Remarks
+This method is used to obtain a string that represents the ADG object. The string typically includes information about the object, such as its name or type. This can be useful for debugging or for displaying information about the object to a user.
+
 ```cs
 string ToString()
 ```
@@ -234,6 +282,10 @@ string ToString()
 ### void Unlock([ShareTypes ShareType](/reference/datagate/datagate-common/share-types.html))
 
 Unlocks the ADG object with the specified share type.
+
+
+#### Remarks
+This method is used to remove a lock of the specified type from the ADG object. The ShareType parameter specifies the type of lock to remove, which can be read, write, or other types of locks. This can be useful for managing concurrent access to the object.
 
 ```cs
 void Unlock(ShareTypes ShareType)
@@ -249,6 +301,10 @@ void Unlock(ShareTypes ShareType)
 
 Writes the base objects of the ADG object to an XML writer.
 
+
+#### Remarks
+This method is used to write the base objects of the ADG object to an XML writer. The writer parameter specifies the XML writer to write to. This can be useful for serializing the object's state to XML.
+
 ```cs
 void WriteBases(XmlWriter writer)
 ```
@@ -262,6 +318,10 @@ void WriteBases(XmlWriter writer)
 ### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html))
 
 Writes the ADG object to an XML writer using the specified options.
+
+
+#### Remarks
+This method is used to write the ADG object to an XML writer using the specified options. The writer parameter specifies the XML writer to write to. The options parameter specifies the options to use when writing the XML, such as whether to include schema information or whether to indent the XML.This can be useful for serializing the object's state to XML.
 
 ```cs
 void WriteXml(XmlWriter writer, XmlOptions options)
@@ -278,6 +338,10 @@ void WriteXml(XmlWriter writer, XmlOptions options)
 
 Writes the ADG object to an XML writer using the specified options and event handler.
 
+
+#### Remarks
+This method is used to write the ADG object to an XML writer using the specified options and event handler. The writer parameter specifies the XML writer to write to. The options parameter specifies the options to use when writing the XML, such as whether to include schema information or whether to indent the XML.The hndlr parameter specifies the event handler for handling cancel events during the write operation. This can be useful for interrupting the write operation based on custom logic.
+
 ```cs
 void WriteXml(XmlWriter writer, XmlOptions options, XmlCancelEventHandler hndlr)
 ```
@@ -293,6 +357,10 @@ void WriteXml(XmlWriter writer, XmlOptions options, XmlCancelEventHandler hndlr)
 ### void WriteXml([XmlWriter writer](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlwriter?view=net-8.0), [XmlOptions options](/reference/datagate/datagate-client/xml-options.html), [XmlCancelEventHandler hndlr](/reference/datagate/datagate-client/xml-cancel-event-handler.html), [OpenFileAdapterDelegate fileOpener](/reference/datagate/datagate-client/open-file-adapter-delegate.html))
 
 Writes the ADG object to an XML writer using the specified options, event handler, and file opener delegate.
+
+
+#### Remarks
+This method is used to write the ADG object to an XML writer using the specified options, event handler, and file opener delegate. The writer parameter specifies the XML writer to write to. The options parameter specifies the options to use when writing the XML, such as whether to include schema information or whether to indent the XML.The hndlr parameter specifies the event handler for handling cancel events during the write operation. This can be useful for interrupting the write operation based on custom logic.The fileOpener parameter specifies the delegate for opening a file during the write operation. This can be useful for writing the XML to a specific file or stream.
 
 ```cs
 void WriteXml(XmlWriter writer, XmlOptions options, XmlCancelEventHandler hndlr, OpenFileAdapterDelegate fileOpener)

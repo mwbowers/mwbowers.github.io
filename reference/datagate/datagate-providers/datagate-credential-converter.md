@@ -1,7 +1,7 @@
 ---
-title: "DataGateCredentialConverter class | QSYS API Reference Guide"
+title: "DataGateCredentialConverter class"
 description: "Provides a converter for DataGate credentials. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides a converter for DataGate credentials.

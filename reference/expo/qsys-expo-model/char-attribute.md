@@ -1,7 +1,7 @@
 ---
-title: "CharAttribute class | QSYS API Reference Guide"
+title: "CharAttribute class           | QSYS API Reference Guide"
 description: "Provides Char Attributes (for Properties) "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Provides Char Attributes (for Properties)

@@ -1,7 +1,7 @@
 ---
-title: "Export class | QSYS API Reference Guide"
+title: "Export class                  | QSYS API Reference Guide"
 description: "Provides functionality for exporting data to XML or CSV format. This class includes methods for creating tasks to perform the export, logging messages"
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides functionality for exporting data to XML or CSV format.
@@ -23,6 +23,10 @@ This class includes methods for creating tasks to perform the export, logging me
 ### Task With([ExportOptions options](/reference/datagate/datagate-client/export-options.html))
 
 Starts a new task to export data with the specified options.
+
+
+#### Remarks
+This method is used to start a new task to export data with the specified options.The task is started with a default cancellation token, which means the task cannot be canceled.The method calls the overloaded  method with the specified options and the default cancellation token.
 
 ```cs
 Task With(ExportOptions options)

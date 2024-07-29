@@ -1,7 +1,7 @@
 ---
-title: "CharTypeAttribute class | QSYS API Reference Guide"
+title: "CharTypeAttribute class       | QSYS API Reference Guide"
 description: "A non-RPG class may stamp a string member with this attribute to be considered as a fixed-sized character field by a consumer RPG program. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:18:00Z
 ---
 
 A non-RPG class may stamp a string member with this attribute to be considered as a fixed-sized character field by a consumer RPG program.

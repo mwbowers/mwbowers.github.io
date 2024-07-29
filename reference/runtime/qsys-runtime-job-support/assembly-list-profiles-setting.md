@@ -1,7 +1,8 @@
 ---
-title: "AssemblyListProfilesSetting class | QSYS API Reference Guide"
+title: "AssemblyListProfilesSetting class"
 description: "Gets or sets a dictionary of named assembly lists.  "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
+sitemap: false
 ---
 
 Gets or sets a dictionary of named assembly lists. 

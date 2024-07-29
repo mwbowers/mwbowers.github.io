@@ -1,7 +1,7 @@
 ---
-title: "InvalidVirtualTerminalException class | QSYS API Reference Guide"
+title: "InvalidVirtualTerminalException class"
 description: "Virtual Terminal value -mode- is not supported exception. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Virtual Terminal value -mode- is not supported exception.

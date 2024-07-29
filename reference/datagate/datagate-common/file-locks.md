@@ -1,7 +1,8 @@
 ---
-title: "FileLocks enum | QSYS API Reference Guide"
+title: "FileLocks enum                | QSYS API Reference Guide"
 description: "Specifies the file lock mode. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
+sitemap: false
 ---
 
 Specifies the file lock mode.

@@ -1,7 +1,7 @@
 ---
 title: "DisplayOptionsServiceCollectionExtensions class"
 description: "Provides helper class to assist server configuration "
-last_modified_at: 2024-07-10T15:33:55Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Provides helper class to assist server configuration

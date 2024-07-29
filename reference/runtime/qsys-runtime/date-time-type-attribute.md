@@ -1,7 +1,7 @@
 ---
-title: "DateTimeTypeAttribute class | QSYS API Reference Guide"
+title: "DateTimeTypeAttribute class   | QSYS API Reference Guide"
 description: "A non-RPG class may stamp a System.DateTime member with this attribute to be considered as a fixed-sized date/time/timestamp field by a consumer RPG p"
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 A non-RPG class may stamp a System.DateTime member with this attribute to be considered as a fixed-sized date/time/timestamp field by a consumer RPG program.

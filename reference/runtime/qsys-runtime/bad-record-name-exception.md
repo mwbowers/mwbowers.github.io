@@ -1,7 +1,8 @@
 ---
-title: "BadRecordNameException class | QSYS API Reference Guide"
+title: "BadRecordNameException class  | QSYS API Reference Guide"
 description: "Exception thrown when a bad record name is encountered when constructing a WRF (Wings Record Format). "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:17:51Z
+sitemap: false
 ---
 
 Exception thrown when a bad record name is encountered when constructing a WRF (Wings Record Format).

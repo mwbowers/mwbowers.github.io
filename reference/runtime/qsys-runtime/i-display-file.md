@@ -1,7 +1,7 @@
 ---
 title: "IDisplayFile interface        | QSYS API Reference Guide"
 description: "Defines the interface for display files, providing methods and properties for interacting with display file records and formats. "
-last_modified_at: 2024-07-10T21:22:30Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Defines the interface for display files, providing methods and properties for interacting with display file records and formats.

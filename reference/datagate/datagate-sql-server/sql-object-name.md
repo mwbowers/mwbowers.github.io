@@ -1,7 +1,7 @@
 ---
-title: "SqlObjectName class | QSYS API Reference Guide"
+title: "SqlObjectName class           | QSYS API Reference Guide"
 description: "Represents a SQL object name. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Represents a SQL object name.
@@ -108,6 +108,10 @@ SqlObjectName(String, String, String, String)
 ### SqlObjectName Parse([string input](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Parses a string into a SqlObjectName.
+
+
+#### Remarks
+This method is used to convert a string into a SqlObjectName. The string should be in the format of a SQL object name, such as "server.database.schema.object". If the string cannot be parsed, an exception is thrown.
 
 ```cs
 SqlObjectName Parse(string input)

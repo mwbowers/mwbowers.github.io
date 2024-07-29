@@ -1,7 +1,7 @@
 ---
 title: "EditWord class                | QSYS API Reference Guide"
 description: "Provides methods for applying edit word parameters to numeric values, including formatting and manipulating the output string based on specified patte"
-last_modified_at: 2024-07-10T21:22:30Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Provides methods for applying edit word parameters to numeric values, including formatting and manipulating the output string based on specified patterns.

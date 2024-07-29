@@ -1,7 +1,7 @@
 ---
-title: "DdsDateFormat enum | QSYS API Reference Guide"
+title: "DdsDateFormat enum            | QSYS API Reference Guide"
 description: "Define code names for the supported presentation Date Formattings. "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
 ---
 
 Define code names for the supported presentation Date Formattings.

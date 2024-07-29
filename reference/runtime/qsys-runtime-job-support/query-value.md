@@ -1,7 +1,7 @@
 ---
-title: "QueryValue class | QSYS API Reference Guide"
+title: "QueryValue class              | QSYS API Reference Guide"
 description: "Represents a Value stored in a SQL Query Result. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Represents a Value stored in a SQL Query Result.

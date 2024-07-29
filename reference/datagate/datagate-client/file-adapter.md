@@ -1,7 +1,7 @@
 ---
 title: "FileAdapter class             | QSYS API Reference Guide"
 description: "The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings. "
-last_modified_at: 2024-07-10T21:20:15Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The  class manages file operations like opening, closing, reading, writing, and querying, handling various access modes and settings.
@@ -175,6 +175,10 @@ FileAdapter(IFileObject)
 
 Adds a record to the file using the provided AdgDataSet.
 
+
+#### Remarks
+The AddRecord method is used to add a record to the file that the FileAdapter is working with. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the AddRecord method of the FileData object of the FileAdapter, passing the provided AdgDataSet. The AddRecord method of the FileData object adds a record to the file with the data from the AdgDataSet. The AdgDataSet should contain the data for the new record in its tables. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
+
 ```cs
 void AddRecord(AdgDataSet ds)
 ```
@@ -188,6 +192,10 @@ void AddRecord(AdgDataSet ds)
 ### void AddRecord([XmlReader xr](https://learn.microsoft.com/en-us/dotnet/api/system.xml.xmlreader?view=net-8.0), [AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html))
 
 Adds a record to the file using the provided XmlReader and AdgDataSet.
+
+
+#### Remarks
+The AddRecord method is used to add a record to the file that the FileAdapter is working with. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the AddRecord method of the FileData object of the FileAdapter, passing the provided XmlReader and AdgDataSet. The AddRecord method of the FileData object adds a record to the file with the data from the XmlReader, using the schema from the AdgDataSet. The XmlReader should contain the data for the new record in XML format. The AdgDataSet should contain the schema for the new record. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
 
 ```cs
 void AddRecord(XmlReader xr, AdgDataSet ds)
@@ -204,6 +212,10 @@ void AddRecord(XmlReader xr, AdgDataSet ds)
 
 Adds a record to the file using the provided AdgDataSet and application indicators.
 
+
+#### Remarks
+The AddRecord method is used to add a record to the file that the FileAdapter is working with. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the AddRecord method of the FileData object of the FileAdapter, passing the provided AdgDataSet and application indicators. The AddRecord method of the FileData object adds a record to the file with the data from the AdgDataSet and the specified application indicators. The AdgDataSet should contain the data for the new record in its tables. The application indicators should be an array of characters that indicate the status of the application for the new record. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
+
 ```cs
 void AddRecord(AdgDataSet ds, Char[] appIndicators)
 ```
@@ -219,6 +231,10 @@ void AddRecord(AdgDataSet ds, Char[] appIndicators)
 
 Changes the current record in the file using the provided AdgDataSet.
 
+
+#### Remarks
+The ChangeCurrent method is used to change the current record in the file that the FileAdapter is working with. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ChangeCurrent method of the FileData object of the FileAdapter, passing the provided AdgDataSet. The ChangeCurrent method of the FileData object changes the current record in the file with the data from the AdgDataSet. The AdgDataSet should contain the data for the new record in its tables. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
+
 ```cs
 void ChangeCurrent(AdgDataSet ds)
 ```
@@ -232,6 +248,10 @@ void ChangeCurrent(AdgDataSet ds)
 ### void ChangeRRN([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [long RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Changes the current record in the file to the record at the specified relative record number (RRN).
+
+
+#### Remarks
+The ChangeRRN method is used to change the current record in the file that the FileAdapter is working with to the record at the specified relative record number (RRN). It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ChangeRRN method of the FileData object of the FileAdapter, passing the provided AdgDataSet and RRN. The ChangeRRN method of the FileData object changes the current record in the file to the record at the specified RRN with the data from the AdgDataSet. The AdgDataSet should contain the data for the new record in its tables. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
 
 ```cs
 void ChangeRRN(AdgDataSet ds, long RRN)
@@ -248,6 +268,10 @@ void ChangeRRN(AdgDataSet ds, long RRN)
 
 Checks the validity of the provided key table.
 
+
+#### Remarks
+The CheckKey method is used to check the validity of the provided key table. It first checks if the provided AdgKeyTable is null. If it is, it throws an ArgumentNullException. It then calls the CheckKey method of the FileData object of the FileAdapter, passing the provided AdgKeyTable. The CheckKey method of the FileData object checks the validity of the key table. The AdgKeyTable should contain the keys for the records in the file that the FileAdapter is working with. If the key table is not valid, the CheckKey method throws an exception.
+
 ```cs
 void CheckKey(AdgKeyTable keyTable)
 ```
@@ -262,6 +286,10 @@ void CheckKey(AdgKeyTable keyTable)
 
 Closes the FileAdapter and releases all resources used by it.
 
+
+#### Remarks
+The Close method is used to close the FileAdapter and release all resources used by it. It calls the Dispose method, which releases both managed and unmanaged resources. After the Close method is called, the FileAdapter can no longer be used unless it is reopened with a new connection, file name, and member name. It is recommended to call this method when you are finished using the FileAdapter to free up system resources.
+
 ```cs
 void Close()
 ```
@@ -269,6 +297,10 @@ void Close()
 ### AdgDataSet CreateDataSet()
 
 Creates a new AdgDataSet for the FileAdapter.
+
+
+#### Remarks
+The CreateDataSet method is used to create a new AdgDataSet for the FileAdapter. It first calls the PrepareParms method to prepare the parameters for the FileAdapter. Then it calls the NewDataSet method of the FileFactory class, passing the FileObject of the FileAdapter. The NewDataSet method creates a new AdgDataSet for the FileObject. The ThrowIfNotOpen method is used to check if the FileObject is null. If it is, it throws an exception. Otherwise, it returns the FileObject. The created AdgDataSet can be used to interact with the data in the file that the FileAdapter is working with.
 
 ```cs
 AdgDataSet CreateDataSet()
@@ -278,6 +310,10 @@ AdgDataSet CreateDataSet()
 
 Deletes all records from the file that the FileAdapter is working with.
 
+
+#### Remarks
+The DeleteAllRecords method is used to delete all records from the file that the FileAdapter is working with. It calls the DeleteAllRecords method of the FileData object of the FileAdapter. The DeleteAllRecords method of the FileData object deletes all records from the file. This operation is irreversible, so it should be used with caution. It is recommended to have a backup of the file before calling this method.
+
 ```cs
 void DeleteAllRecords()
 ```
@@ -286,6 +322,10 @@ void DeleteAllRecords()
 
 Deletes the current record from the file that the FileAdapter is working with.
 
+
+#### Remarks
+The DeleteCurrent method is used to delete the current record from the file that the FileAdapter is working with. It calls the DeleteCurrent method of the FileData object of the FileAdapter. The DeleteCurrent method of the FileData object deletes the current record from the file. This operation is irreversible, so it should be used with caution. It is recommended to have a backup of the file before calling this method.
+
 ```cs
 void DeleteCurrent()
 ```
@@ -293,6 +333,10 @@ void DeleteCurrent()
 ### void DeleteKey([AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 
 Deletes the record with the specified key from the file that the FileAdapter is working with.
+
+
+#### Remarks
+The DeleteKey method is used to delete the record with the specified key from the file that the FileAdapter is working with. It first checks if the provided AdgKeyTable is null. If it is, it throws an ArgumentNullException. It then calls the DeleteKey method of the FileData object of the FileAdapter, passing the provided AdgKeyTable. The DeleteKey method of the FileData object deletes the record with the specified key from the file. The AdgKeyTable should contain the key of the record to delete. This operation is irreversible, so it should be used with caution. It is recommended to have a backup of the file before calling this method.
 
 ```cs
 void DeleteKey(AdgKeyTable keyTable)
@@ -307,6 +351,10 @@ void DeleteKey(AdgKeyTable keyTable)
 ### void DeleteRange([AdgKeyTable firstKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst rangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable lastKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast rangeLast](/reference/datagate/datagate-common/range-last.html))
 
 Deletes a range of records from the file that the FileAdapter is working with.
+
+
+#### Remarks
+The DeleteRange method is used to delete a range of records from the file that the FileAdapter is working with. It first checks if the provided AdgKeyTables are null. If they are, it throws an ArgumentNullException. It then calls the DeleteRange method of the FileData object of the FileAdapter, passing the provided AdgKeyTables and RangeFirst and RangeLast values. The DeleteRange method of the FileData object deletes the range of records from the file. The AdgKeyTables should contain the keys of the first and last records in the range to delete. The RangeFirst and RangeLast values indicate whether to include the first and last records in the deletion. This operation is irreversible, so it should be used with caution. It is recommended to have a backup of the file before calling this method.
 
 ```cs
 void DeleteRange(AdgKeyTable firstKey, RangeFirst rangeFirst, AdgKeyTable lastKey, RangeLast rangeLast)
@@ -325,6 +373,10 @@ void DeleteRange(AdgKeyTable firstKey, RangeFirst rangeFirst, AdgKeyTable lastKe
 
 Deletes the record at the specified relative record number (RRN) from the file that the FileAdapter is working with.
 
+
+#### Remarks
+The DeleteRRN method is used to delete the record at the specified relative record number (RRN) from the file that the FileAdapter is working with. It calls the DeleteRRN method of the FileData object of the FileAdapter, passing the provided RRN. The DeleteRRN method of the FileData object deletes the record at the specified RRN from the file. This operation is irreversible, so it should be used with caution. It is recommended to have a backup of the file before calling this method.
+
 ```cs
 void DeleteRRN(long RRN)
 ```
@@ -339,6 +391,10 @@ void DeleteRRN(long RRN)
 
 Releases all resources used by the FileAdapter.
 
+
+#### Remarks
+The Dispose method is used to release all resources used by the FileAdapter. It calls the Dispose method with true as the argument, indicating that the FileAdapter is being explicitly disposed by the user, not cleaned up by the garbage collector. This means that both managed and unmanaged resources should be released. It also calls the GC.SuppressFinalize method, which prevents the garbage collector from calling the finalizer of the FileAdapter. This is done because the Dispose method has already done all the cleanup necessary. After the Dispose method is called, the FileAdapter can no longer be used unless it is reopened with a new connection, file name, and member name. It is recommended to call this method when you are finished using the FileAdapter to free up system resources.
+
 ```cs
 void Dispose()
 ```
@@ -346,6 +402,10 @@ void Dispose()
 ### void Dispose([bool isDisposing](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Releases the unmanaged resources used by the FileAdapter and optionally releases the managed resources.
+
+
+#### Remarks
+The Dispose method is used to release the resources used by the FileAdapter. If the isDisposing parameter is true, both managed and unmanaged resources are released. If the isDisposing parameter is false, only unmanaged resources are released. This method is called by the public Dispose method and the Finalize method. Dispose invokes the protected Dispose method with the isDisposing parameter set to true. Finalize invokes Dispose with isDisposing set to false.When the isDisposing parameter is true, this method releases all resources held by any managed objects that this FileAdapter references. This method invokes the Dispose method of every object in m_file and FileObject that implements the IDisposable interface.
 
 ```cs
 void Dispose(bool isDisposing)
@@ -361,6 +421,10 @@ void Dispose(bool isDisposing)
 
 Finalizes an instance of the FileAdapter class.
 
+
+#### Remarks
+This destructor is called when the garbage collector finalizes an instance of the FileAdapter class. It calls the Dispose method with false as the argument, indicating that the FileAdapter is being cleaned up by the garbage collector, not explicitly disposed by the user. This means that only unmanaged resources should be released, as managed resources will be released by the garbage collector.
+
 ```cs
 void Finalize()
 ```
@@ -369,6 +433,10 @@ void Finalize()
 
 Forces the end of data (EOD) for the file that the FileAdapter is working with.
 
+
+#### Remarks
+The ForceEOD method is used to force the end of data (EOD) for the file that the FileAdapter is working with. It calls the ForceEOD method of the FileData object of the FileAdapter, passing the member name and open attributes of the FileAdapter. The ForceEOD method of the FileData object forces the EOD for the file. This method is typically used when you have finished reading or writing data to the file and want to ensure that all data has been processed.
+
 ```cs
 void ForceEOD()
 ```
@@ -376,6 +444,10 @@ void ForceEOD()
 ### string GetFormatName([int i](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Gets the name of the format at the specified index in the file that the FileAdapter is working with.
+
+
+#### Remarks
+The GetFormatName method is used to get the name of the format at the specified index in the file that the FileAdapter is working with. It first checks if the FileAdapter is currently working with a file (i.e., the FileData object of the FileAdapter is not null). If it is not, it throws an InvalidOperationException. It then calls the GetFormatName method of the FileData object of the FileAdapter, passing the provided index. The GetFormatName method of the FileData object returns the name of the format at the specified index in the file. This method is typically used when you need to know the name of a specific format in the file.
 
 ```cs
 string GetFormatName(int i)
@@ -397,6 +469,10 @@ string GetFormatName(int i)
 
 Gets the print properties for the specified format in the file that the FileAdapter is working with.
 
+
+#### Remarks
+The GetPrintProperties method is used to get the print properties for the specified format in the file that the FileAdapter is working with. It first checks if the file is a print file by checking if the ExtendedResults of the FileData object of the FileAdapter contains the key "NetPrintFile". If the file is a print file, it gets the PrintFile object from the ExtendedResults and calls its GetPrintProperties method, passing the provided format name. The GetPrintProperties method of the PrintFile object returns the print properties for the specified format. If the file is not a print file, it throws an dgException with the error number dgEcINVFILETYPE. This method is typically used when you need to get the print properties for a specific format in a print file.
+
 ```cs
 IPrintProperties GetPrintProperties(string format)
 ```
@@ -417,6 +493,10 @@ IPrintProperties GetPrintProperties(string format)
 
 Opens the FileAdapter with the specified AdgDataSet.
 
+
+#### Remarks
+The Open method is used to open the FileAdapter with the specified AdgDataSet. It first checks if the FileAdapter is already open. If it is, it throws an exception. Then it calls the PrepareParms method to prepare the parameters for the FileAdapter. It then calls the NewFileData method of the FileFactory class, passing the FileObject and member name of the FileAdapter, the access mode, the open attributes, and a reference to the AdgDataSet. The NewFileData method creates a new FileData object for the FileObject and member name, with the specified access mode and open attributes, and assigns it to the AdgDataSet. The AdgDataSet can be used to interact with the data in the file that the FileAdapter is working with.
+
 ```cs
 void Open(AdgDataSet ds)
 ```
@@ -430,6 +510,10 @@ void Open(AdgDataSet ds)
 ### void ReadRandomKey([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadRandomMode mode](/reference/datagate/datagate-common/read-random-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 
 Reads a record from the file that the FileAdapter is working with using the specified key.
+
+
+#### Remarks
+The ReadRandomKey method is used to read a record from the file that the FileAdapter is working with using the specified key. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ReadRandomKey method of the FileData object of the FileAdapter, passing the provided AdgDataSet, ReadRandomMode, LockRequest, and AdgKeyTable. The ReadRandomKey method of the FileData object reads the record with the specified key from the file and fills the AdgDataSet with the data from the record. The AdgDataSet should be empty before calling this method. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
 
 ```cs
 void ReadRandomKey(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, AdgKeyTable keyTable)
@@ -448,6 +532,10 @@ void ReadRandomKey(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, AdgKeyTab
 
 Reads a record from the file that the FileAdapter is working with using the specified relative record number (RRN).
 
+
+#### Remarks
+The ReadRandomRRN method is used to read a record from the file that the FileAdapter is working with using the specified relative record number (RRN). It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ReadRandomRRN method of the FileData object of the FileAdapter, passing the provided AdgDataSet, ReadRandomMode, LockRequest, and RRN. The ReadRandomRRN method of the FileData object reads the record at the specified RRN from the file and fills the AdgDataSet with the data from the record. The AdgDataSet should be empty before calling this method. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
+
 ```cs
 void ReadRandomRRN(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, long RRN)
 ```
@@ -464,6 +552,10 @@ void ReadRandomRRN(AdgDataSet ds, ReadRandomMode mode, LockRequest lr, long RRN)
 ### void ReadRange([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [RangeMode mode](/reference/datagate/datagate-common/range-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable firstKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst rangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable lastKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast rangeLast](/reference/datagate/datagate-common/range-last.html))
 
 Reads a range of records from the file that the FileAdapter is working with using the specified keys.
+
+
+#### Remarks
+The ReadRange method is used to read a range of records from the file that the FileAdapter is working with using the specified keys. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ReadRange method of the FileData object of the FileAdapter, passing the provided AdgDataSet, RangeMode, LockRequest, AdgKeyTables, and RangeFirst and RangeLast values. The ReadRange method of the FileData object reads the range of records from the file and fills the AdgDataSet with the data from the records. The AdgDataSet should be empty before calling this method. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
 
 ```cs
 void ReadRange(AdgDataSet ds, RangeMode mode, LockRequest lr, AdgKeyTable firstKey, RangeFirst rangeFirst, AdgKeyTable lastKey, RangeLast rangeLast)
@@ -485,6 +577,10 @@ void ReadRange(AdgDataSet ds, RangeMode mode, LockRequest lr, AdgKeyTable firstK
 
 Reads a record from the file that the FileAdapter is working with sequentially.
 
+
+#### Remarks
+The ReadSequential method is used to read a record from the file that the FileAdapter is working with sequentially. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ReadSequential method of the FileData object of the FileAdapter, passing the provided AdgDataSet, ReadSequentialMode, and LockRequest. The ReadSequential method of the FileData object reads the next record in the file and fills the AdgDataSet with the data from the record. The AdgDataSet should be empty before calling this method. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
+
 ```cs
 void ReadSequential(AdgDataSet ds, ReadSequentialMode mode, LockRequest lr)
 ```
@@ -500,6 +596,10 @@ void ReadSequential(AdgDataSet ds, ReadSequentialMode mode, LockRequest lr)
 ### void ReadSequentialEqual([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [ReadEqualMode mode](/reference/datagate/datagate-common/read-equal-mode.html), [LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [AdgKeyTable keyTable](/reference/datagate/datagate-client/adg-key-table.html))
 
 Reads a record from the file that the FileAdapter is working with sequentially and equal to the specified key.
+
+
+#### Remarks
+The ReadSequentialEqual method is used to read a record from the file that the FileAdapter is working with sequentially and equal to the specified key. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ReadSequentialEqual method of the FileData object of the FileAdapter, passing the provided AdgDataSet, ReadEqualMode, LockRequest, and AdgKeyTable. The ReadSequentialEqual method of the FileData object reads the next record in the file that is equal to the specified key and fills the AdgDataSet with the data from the record. The AdgDataSet should be empty before calling this method. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
 
 ```cs
 void ReadSequentialEqual(AdgDataSet ds, ReadEqualMode mode, LockRequest lr, AdgKeyTable keyTable)
@@ -518,6 +618,10 @@ void ReadSequentialEqual(AdgDataSet ds, ReadEqualMode mode, LockRequest lr, AdgK
 
 Releases the lock on the current record in the file that the FileAdapter is working with.
 
+
+#### Remarks
+The ReleaseCurrent method is used to release the lock on the current record in the file that the FileAdapter is working with. It calls the ReleaseCurrent method of the FileData object of the FileAdapter. The ReleaseCurrent method of the FileData object releases the lock on the current record in the file. This method should be called after you have finished working with a record that you have locked, to allow other users to access the record.
+
 ```cs
 void ReleaseCurrent()
 ```
@@ -525,6 +629,10 @@ void ReleaseCurrent()
 ### void ReleaseRRN([LockRequest lr](/reference/datagate/datagate-common/lock-request.html), [long RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Releases the lock on the record at the specified relative record number (RRN) in the file that the FileAdapter is working with.
+
+
+#### Remarks
+The ReleaseRRN method is used to release the lock on the record at the specified relative record number (RRN) in the file that the FileAdapter is working with. It first checks if the provided LockRequest is a ReadWrite lock. If it is not, it throws a dgException. It then calls the ReleaseRRN method of the FileData object of the FileAdapter, passing the provided LockRequest and RRN. The ReleaseRRN method of the FileData object releases the lock on the record at the specified RRN in the file. This method should be called after you have finished working with a record that you have locked, to allow other users to access the record.
 
 ```cs
 void ReleaseRRN(LockRequest lr, long RRN)
@@ -541,6 +649,10 @@ void ReleaseRRN(LockRequest lr, long RRN)
 
 Resets the format of the file that the FileAdapter is working with to the default format.
 
+
+#### Remarks
+The ResetFormat method is used to reset the format of the file that the FileAdapter is working with to the default format. It calls the ResetFormat method of the FileData object of the FileAdapter. The ResetFormat method of the FileData object resets the format of the file to the default format. This method is typically used when you have changed the format of the file using the SetFormat method and you want to reset it to the default format.
+
 ```cs
 void ResetFormat()
 ```
@@ -549,6 +661,10 @@ void ResetFormat()
 
 Resets the print attributes for the file that the FileAdapter is working with.
 
+
+#### Remarks
+The ResetPrintAttr method is used to reset the print attributes for the file that the FileAdapter is working with. It first checks if the FileAdapter is currently working with a file (i.e., the FileData object of the FileAdapter is not null). If it is not, it throws an InvalidOperationException. It then calls the ResetPrintAttr method of the FileData object of the FileAdapter, passing the member name and the open attributes. The ResetPrintAttr method of the FileData object resets the print attributes for the file. This method is typically used when you have changed the print attributes of the file and you want to reset them to their default values.
+
 ```cs
 void ResetPrintAttr()
 ```
@@ -556,6 +672,10 @@ void ResetPrintAttr()
 ### void ReuseRRN([AdgDataSet ds](/reference/datagate/datagate-client/adg-data-set.html), [long RRN](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 
 Reuses the record at the specified relative record number (RRN) in the file that the FileAdapter is working with.
+
+
+#### Remarks
+The ReuseRRN method is used to reuse the record at the specified relative record number (RRN) in the file that the FileAdapter is working with. It first checks if the provided AdgDataSet is null. If it is, it throws an ArgumentNullException. It then calls the ReuseRRN method of the FileData object of the FileAdapter, passing the provided AdgDataSet and RRN. The ReuseRRN method of the FileData object reuses the record at the specified RRN in the file and fills the AdgDataSet with the data from the record. The AdgDataSet should be empty before calling this method. The structure of the AdgDataSet should match the structure of the file that the FileAdapter is working with.
 
 ```cs
 void ReuseRRN(AdgDataSet ds, long RRN)
@@ -572,6 +692,10 @@ void ReuseRRN(AdgDataSet ds, long RRN)
 
 Positions the file pointer at the record with the specified key in the file that the FileAdapter is working with.
 
+
+#### Remarks
+The SeekKey method is used to position the file pointer at the record with the specified key in the file that the FileAdapter is working with. It first checks if the provided AdgKeyTable is null. If it is, it throws an ArgumentNullException. It then calls the SeekKey method of the FileData object of the FileAdapter, passing the provided SeekMode and AdgKeyTable. The SeekKey method of the FileData object positions the file pointer at the record with the specified key in the file. This method does not read the record; it only positions the file pointer. To read the record after calling this method, you can use the ReadRandomKey or ReadSequential methods.
+
 ```cs
 void SeekKey(SeekMode mode, AdgKeyTable keyTable)
 ```
@@ -586,6 +710,10 @@ void SeekKey(SeekMode mode, AdgKeyTable keyTable)
 ### void SeekRange([RangeMode mode](/reference/datagate/datagate-common/range-mode.html), [AdgKeyTable firstKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeFirst rangeFirst](/reference/datagate/datagate-common/range-first.html), [AdgKeyTable lastKey](/reference/datagate/datagate-client/adg-key-table.html), [RangeLast rangeLast](/reference/datagate/datagate-common/range-last.html))
 
 Positions the file pointer at the first record in the specified range in the file that the FileAdapter is working with.
+
+
+#### Remarks
+The SeekRange method is used to position the file pointer at the first record in the specified range in the file that the FileAdapter is working with. It first checks if the provided AdgKeyTables are null. If they are, it throws an ArgumentNullException. It then calls the SeekRange method of the FileData object of the FileAdapter, passing the provided SeekMode, AdgKeyTables, and RangeFirst and RangeLast values. The SeekRange method of the FileData object positions the file pointer at the first record in the specified range in the file. This method does not read the record; it only positions the file pointer. To read the record after calling this method, you can use the ReadRange method.
 
 ```cs
 void SeekRange(RangeMode mode, AdgKeyTable firstKey, RangeFirst rangeFirst, AdgKeyTable lastKey, RangeLast rangeLast)
@@ -605,6 +733,10 @@ void SeekRange(RangeMode mode, AdgKeyTable firstKey, RangeFirst rangeFirst, AdgK
 
 Positions the file pointer at the record with the specified relative record number (RRN) in the file that the FileAdapter is working with.
 
+
+#### Remarks
+The SeekRRN method is used to position the file pointer at the record with the specified relative record number (RRN) in the file that the FileAdapter is working with. It calls the SeekRRN method of the FileData object of the FileAdapter, passing the provided SeekMode and RRN. The SeekRRN method of the FileData object positions the file pointer at the record with the specified RRN in the file. This method does not read the record; it only positions the file pointer. To read the record after calling this method, you can use the ReadRandomRRN or ReadSequential methods.
+
 ```cs
 void SeekRRN(SeekMode mode, long RRN)
 ```
@@ -619,6 +751,10 @@ void SeekRRN(SeekMode mode, long RRN)
 ### void SetFormat([string Format](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Sets the format of the file that the FileAdapter is working with to the specified format.
+
+
+#### Remarks
+The SetFormat method is used to set the format of the file that the FileAdapter is working with to the specified format. It first checks if the FileAdapter is currently working with a file (i.e., the FileData object of the FileAdapter is not null). If it is not, it throws an InvalidOperationException. It then calls the SetFormat method of the FileData object of the FileAdapter, passing the provided format name. The SetFormat method of the FileData object sets the format of the file to the specified format. This method is typically used when you need to change the format of the file to a specific format.
 
 ```cs
 void SetFormat(string Format)

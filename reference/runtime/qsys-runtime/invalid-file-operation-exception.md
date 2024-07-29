@@ -1,7 +1,7 @@
 ---
-title: "InvalidFileOperationException class | QSYS API Reference Guide"
+title: "InvalidFileOperationException class"
 description: "Invalid Operation: -operation- on file: -filename- exception. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Invalid Operation: -operation- on file: -filename- exception.

@@ -1,7 +1,7 @@
 ---
-title: "NetworkBlockingUpdateException class | QSYS API Reference Guide"
+title: "NetworkBlockingUpdateException class"
 description: "Network Blocking is not allowed for -filename- because it is opened for *UPDATE. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Network Blocking is not allowed for -filename- because it is opened for *UPDATE.

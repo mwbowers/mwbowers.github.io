@@ -1,7 +1,8 @@
 ---
-title: "ExpoModelAssemblyAttribute class | QSYS API Reference Guide"
+title: "ExpoModelAssemblyAttribute class"
 description: "Defines an Assembly attribute to Expo.Model "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
+sitemap: false
 ---
 
 Defines an Assembly attribute to Expo.Model

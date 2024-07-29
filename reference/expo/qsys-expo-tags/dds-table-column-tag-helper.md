@@ -1,7 +1,7 @@
 ---
 title: "DdsTableColumnTagHelper class | QSYS API Reference Guide"
 description: "Defines one of the many Table Columns within a DdsTableRow. "
-last_modified_at: 2024-07-10T21:34:30Z
+last_modified_at: 2024-07-29T18:38:13Z
 ---
 
 Defines one of the many Table Columns within a DdsTableRow.

@@ -1,7 +1,7 @@
 ---
-title: "AdgTable class | QSYS API Reference Guide"
+title: "AdgTable class                | QSYS API Reference Guide"
 description: "The AdgTable class supports DG infrastructure and is not intended to be used directly from your code. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The AdgTable class supports DG infrastructure and is not intended to be used directly from your code.
@@ -50,6 +50,10 @@ AdgTable(DataTable, AdgDataSet)
 ### void SetRowDefaultValues([DataRow row](https://learn.microsoft.com/en-us/dotnet/api/system.data.datarow?view=net-8.0))
 
 Sets the default values for each column in the provided DataRow.
+
+
+#### Remarks
+This method iterates over each DataColumn in the DataRow's table, and sets the value of the DataRow's column to its default value.The default value is determined by the FieldType.GetColumnDefaultValue method, which is not shown in the provided code.An ArgumentNullException is thrown if the provided DataRow is null.
 
 ```cs
 void SetRowDefaultValues(DataRow row)

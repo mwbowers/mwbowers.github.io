@@ -1,7 +1,7 @@
 ---
-title: "ITransformProperties interface | QSYS API Reference Guide"
+title: "ITransformProperties interface"
 description: "Provides an interface for transforming properties. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides an interface for transforming properties.

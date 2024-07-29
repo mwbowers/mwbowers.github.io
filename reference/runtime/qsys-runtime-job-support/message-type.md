@@ -1,7 +1,7 @@
 ---
-title: "MessageType enum | QSYS API Reference Guide"
+title: "MessageType enum              | QSYS API Reference Guide"
 description: "Specifies the type of message.Message Type. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Specifies the type of message.Message Type.

@@ -1,7 +1,7 @@
 ---
-title: "InvalidSourceLengthException class | QSYS API Reference Guide"
+title: "InvalidSourceLengthException class"
 description: "Length of source is less than length of data structure exception. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Length of source is less than length of data structure exception.

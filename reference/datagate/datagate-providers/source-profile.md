@@ -1,7 +1,7 @@
 ---
-title: "SourceProfile class | QSYS API Reference Guide"
+title: "SourceProfile class           | QSYS API Reference Guide"
 description: "The SourceProfile class represents a profile in the source system. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The SourceProfile class represents a profile in the source system.
@@ -90,6 +90,10 @@ SourceProfile(SourceProfile)
 
 Creates a new object that is a copy of the current instance.
 
+
+#### Remarks
+This method is used to create a copy of the current instance of the SourceProfile class. The copy is made by calling the Copy method with a new instance of the SourceProfile class and the current instance as parameters.
+
 ```cs
 object Clone()
 ```
@@ -97,6 +101,10 @@ object Clone()
 ### bool Equals([SourceProfile other](/reference/datagate/datagate-providers/source-profile.html))
 
 Determines whether the current instance of  is equal to the specified instance.
+
+
+#### Remarks
+This method is used to compare the current instance with another instance of the SourceProfile class. The comparison is based on the properties of the instances.
 
 ```cs
 bool Equals(SourceProfile other)
@@ -138,6 +146,10 @@ bool Equals(object other)
 
 Determines whether the current instance of  is equal to the specified object.
 
+
+#### Remarks
+This method is used to compare the current instance with another object of the same type. If the `bIgnoreDatabaseName` parameter is set to true, the comparison will ignore the database name.
+
 ```cs
 bool Equals(object obj, bool bIgnoreDatabaseName)
 ```
@@ -159,6 +171,10 @@ bool Equals(object obj, bool bIgnoreDatabaseName)
 
 Serves as the default hash function.
 
+
+#### Remarks
+This method is used to generate a hash code for the current instance of the SourceProfile class. It takes into account all the properties of the class to generate a unique hash code.
+
 ```cs
 int GetHashCode()
 ```
@@ -166,6 +182,10 @@ int GetHashCode()
 ### bool IsKnownPlatformAttribute([string platformAttr](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Determines whether the provided platform attribute is a known platform attribute.
+
+
+#### Remarks
+This method is used to validate that the platform attribute provided is one that the system recognizes and can handle.
 
 ```cs
 bool IsKnownPlatformAttribute(string platformAttr)
@@ -228,6 +248,10 @@ bool op_Inequality(SourceProfile x, SourceProfile y)
 ### string ToString()
 
 Returns a string that represents the current SourceProfile.
+
+
+#### Remarks
+This method overrides the base ToString method and provides a string representation of the SourceProfile, typically including key properties of the SourceProfile for debugging or logging purposes.
 
 ```cs
 string ToString()

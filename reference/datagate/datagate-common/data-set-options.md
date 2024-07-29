@@ -1,7 +1,8 @@
 ---
-title: "DataSetOptions enum | QSYS API Reference Guide"
+title: "DataSetOptions enum           | QSYS API Reference Guide"
 description: "Specifies options for a DataSet. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
+sitemap: false
 ---
 
 Specifies options for a DataSet.

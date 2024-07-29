@@ -1,7 +1,7 @@
 ---
-title: "DatabaseLabel class | QSYS API Reference Guide"
+title: "DatabaseLabel class           | QSYS API Reference Guide"
 description: "The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 The `DatabaseLabel` class provides static methods for managing and interacting with database labels in a DataGate environment.
@@ -93,6 +93,10 @@ ILabel CreateLabelObject()
 ### ILabel GetLabel([SourceProfile sp](/reference/datagate/datagate-providers/source-profile.html), [string lblName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0))
 
 Retrieves a specific label from a given server.
+
+
+#### Remarks
+This method uses the  method to retrieve all labels from the server specified in the source profile.It then uses LINQ to filter the labels based on the provided name, using a case-insensitive comparison.If a label with the provided name is found, it is returned; otherwise, the method returns null.
 
 ```cs
 ILabel GetLabel(SourceProfile sp, string lblName)

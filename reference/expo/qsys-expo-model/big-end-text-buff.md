@@ -1,7 +1,8 @@
 ---
-title: "BigEndTextBuff class | QSYS API Reference Guide"
+title: "BigEndTextBuff class          | QSYS API Reference Guide"
 description: "This is the Buffer for Big-endian UTF16 files. "
-last_modified_at: 2024-07-09T17:01:01Z
+last_modified_at: 2024-07-29T18:40:13Z
+sitemap: false
 ---
 
 This is the Buffer for Big-endian UTF16 files.

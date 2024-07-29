@@ -1,7 +1,7 @@
 ---
-title: "ExportToCsvOptions class | QSYS API Reference Guide"
+title: "ExportToCsvOptions class      | QSYS API Reference Guide"
 description: "Provides options for exporting data to CSV format. This class includes properties for specifying whether field names should be included, whether trail"
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides options for exporting data to CSV format.

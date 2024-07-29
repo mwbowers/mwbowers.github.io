@@ -1,7 +1,7 @@
 ---
-title: "XmlCancelEventArgs class | QSYS API Reference Guide"
+title: "XmlCancelEventArgs class      | QSYS API Reference Guide"
 description: "Provides data for the XmlCancelEvent event. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides data for the XmlCancelEvent event.
@@ -42,6 +42,10 @@ This can be useful for handling errors or interruptions during XML operations.
 ### string ToString()
 
 Returns a string that represents the current object.
+
+
+#### Remarks
+This method overrides the base ToString method and returns the Message property of the XmlCancelEventArgs object. The Message property contains a formatted string that represents the details of the event. This can be useful for logging or displaying detailed information about the event.
 
 ```cs
 string ToString()

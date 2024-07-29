@@ -1,7 +1,7 @@
 ---
-title: "FileBase class | QSYS API Reference Guide"
+title: "FileBase class                | QSYS API Reference Guide"
 description: "Defines common functionality for files (Database, Printfile, Workstation) "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 Defines common functionality for files (Database, Printfile, Workstation)
@@ -499,6 +499,10 @@ void update(string formatName, IDS indDS)
 
 When overridden in a derived class, updates the current record using field values from a data structure.This base class throws a NotSupportedException exception by default.
 
+
+#### Remarks
+This base implentation throws a NotImplementedException exception.
+
 ```cs
 void update(string formatName, Char[] optionIndicators, IDS fromDS)
 ```
@@ -606,6 +610,10 @@ void Update(string formatName, IDS optionIndicators, IDS fromDS)
 ### void updateFlds([string formatName](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0), [String\[\] fieldNames](https://docs.microsoft.com/en-us/dotnet/api/system.string))
 
 When overridden in a derived class, updates the specified fields on the current record. This base class throws a NotSupportedException exception by default.
+
+
+#### Remarks
+This base implentation throws a NotImplementedException exception.
 
 ```cs
 void updateFlds(string formatName, String[] fieldNames)

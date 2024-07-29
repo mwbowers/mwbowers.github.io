@@ -1,7 +1,7 @@
 ---
 title: "CharArrayInDS&lt;T&gt; struct       | QSYS API Reference Guide"
 description: "Describes a fixed size array of characters contained in a DataStructure. "
-last_modified_at: 2024-07-10T21:22:30Z
+last_modified_at: 2024-07-29T23:18:00Z
 ---
 
 Describes a fixed size array of characters contained in a DataStructure.

@@ -1,7 +1,7 @@
 ---
-title: "CPF9846Exception class | QSYS API Reference Guide"
+title: "CPF9846Exception class        | QSYS API Reference Guide"
 description: "The exception that is thrown when Error while processing file {0} in library {1} "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 The exception that is thrown when Error while processing file {0} in library {1}

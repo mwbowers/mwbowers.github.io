@@ -1,7 +1,7 @@
 ---
-title: "DataGateCredentialExtensions class | QSYS API Reference Guide"
+title: "DataGateCredentialExtensions class"
 description: "Provides extension methods for the IDataGateCredential interface. "
-last_modified_at: 2024-07-09T17:00:40Z
+last_modified_at: 2024-07-29T18:18:49Z
 ---
 
 Provides extension methods for the IDataGateCredential interface.

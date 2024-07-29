@@ -1,7 +1,7 @@
 ---
-title: "DdsHostFileTagHelper class | QSYS API Reference Guide"
+title: "DdsHostFileTagHelper class    | QSYS API Reference Guide"
 description: "Renders a file stored on the Host server. "
-last_modified_at: 2024-07-09T17:01:12Z
+last_modified_at: 2024-07-29T18:38:13Z
 ---
 
 Renders a file stored on the Host server.

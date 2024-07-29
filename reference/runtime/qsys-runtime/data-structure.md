@@ -1,7 +1,7 @@
 ---
-title: "DataStructure class | QSYS API Reference Guide"
+title: "DataStructure class           | QSYS API Reference Guide"
 description: "Contains the functionality to support the semantics of a RPG Data Structure with a memory layout. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:39Z
 ---
 
 Contains the functionality to support the semantics of a RPG Data Structure with a memory layout.
@@ -90,6 +90,7 @@ DataStructure(ILayout[])
 | [GetString](#string-getstringint-start-int-len)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a segment of the Data Structure buffer as a string.
 | [GetTime](#datetime-gettimeint-start-datetimeformat-format-datetimeseparator-separator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeFormat](/reference/datagate/datagate-common/date-time-format.html), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Gets a Time value stored with the specified format and time separator at the specified starting position in the Data Structure buffer.
 | [GetTimestamp](#datetime-gettimestampint-start-datetimeseparator-separator)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [DateTimeSeparator](/reference/runtime/qsys-runtime/date-time-separator.html)) | Gets a Timestamp value stored with the specified timestamp separator at the specified starting position in the Data Structure buffer.
+| [GetValue\<U\>](#u-getvalue-u-int-start)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets the value of the field at the requested starting position in the buffer.
 | [GetZoned](#decimal-getzonedint-start-int-digits-int-decimals)([Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | Gets a decimal number stored as a Zoned decimal number starting at the specified position in the Data Structure buffer.
 | [Load](#void-loadstring-source)([String](https://docs.microsoft.com/en-us/dotnet/api/system.string)) | Sets the Data Structure buffer to the given string value, padding with blanks if necessary.
 | [ObjectToParm](#void-objecttoparmas400program-program-int32--indices-int-dim)([As400Program](/reference/datagate/datagate-client/as400-program.html), [Int32\[\]](https://docs.microsoft.com/en-us/dotnet/api/system.int32), [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32)) | IDS.ObjectToParm implementation. Converts the Data Structure field values into parameters for calling the given IBMi program.
@@ -671,6 +672,26 @@ DateTime GetTimestamp(int start, DateTimeSeparator separator)
 | Type | Description
 | --- | ---
 | [DateTime](https://docs.microsoft.com/en-us/dotnet/api/system.datetime) | A DateTime value containing the Timestamp value retrieved from the Data Structure Buffer.
+
+### U GetValue<U>([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
+
+Gets the value of the field at the requested starting position in the buffer.
+
+```cs
+U GetValue<U>(int start)
+```
+
+#### Parameters
+
+| Type | Parameter name | Description
+| --- | --- | ---
+| [Int32](https://docs.microsoft.com/en-us/dotnet/api/system.int32) | start | Position in the buffer where the field starts.
+
+#### Returns
+
+| Type | Description
+| --- | ---
+| [U](https://learn.microsoft.com/en-us/dotnet/api/) | The value of the field that starts at the requested buffer position.
 
 ### decimal GetZoned([int start](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int digits](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types), [int decimals](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/integral-numeric-types))
 

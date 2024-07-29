@@ -1,7 +1,7 @@
 ---
-title: "FileNotOpenException class | QSYS API Reference Guide"
+title: "FileNotOpenException class    | QSYS API Reference Guide"
 description: "File -filename- is not open exception. "
-last_modified_at: 2024-07-09T17:00:49Z
+last_modified_at: 2024-07-29T23:19:52Z
 ---
 
 File -filename- is not open exception.
