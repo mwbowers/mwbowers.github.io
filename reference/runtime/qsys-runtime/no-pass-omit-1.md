@@ -1,7 +1,7 @@
 ---
-title: "NoPassOmit&amp;lt;T&amp;gt; class     | QSYS API Reference Guide"
+title: "NoPassOmit&lt;T&gt; class     | QSYS API Reference Guide"
 description: "Encapsulates a *OMIT wnd *NOPASS parameter. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-07-30T16:27:02Z
 ---
 
 Encapsulates a *OMIT wnd *NOPASS parameter.

@@ -1,7 +1,7 @@
 ---
-title: "Dim&amp;lt;T1, T2, T3, T4&amp;gt; class"
+title: "Dim&lt;T1, T2, T3, T4&gt; class"
 description: "Defines a 4-digit dimension, from 1000 to 9999, to be used in the declaration of fixed-length array types. "
-last_modified_at: 2024-07-29T23:19:52Z
+last_modified_at: 2024-07-30T16:27:02Z
 sitemap: false
 ---
 
