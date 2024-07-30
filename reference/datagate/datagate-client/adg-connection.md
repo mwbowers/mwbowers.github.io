@@ -1,7 +1,7 @@
 ---
 title: "AdgConnection class           | QSYS API Reference Guide"
 description: "The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program.  "
-last_modified_at: 2024-07-29T18:18:49Z
+last_modified_at: 2024-07-30T16:59:21Z
 ---
 
 The AdgConnection class controls database connection resources and allows them to be shared among DataGate objects in your program. 
@@ -72,7 +72,6 @@ AdgConnection(SourceProfile, IExchange5250)
 | [Decoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.decoder?view=net-8.0) | Decoder | Gets the Decoder of the connection. |
 | [Encoder](https://learn.microsoft.com/en-us/dotnet/api/system.text.encoder?view=net-8.0) | Encoder | Gets the Encoder of the connection. |
 | [IMonitor](/reference/datagate/datagate-client/i-monitor.html) | Monitor | Gets the Monitor of the connection. |
-| [OpenAccessRpg](/reference/datagate/datagate-data-link/open-access-rpg.html) | OpenAccessRpg | Delegate to support users of Wings-enabled connections. |
 | [SourceProfile](/reference/datagate/datagate-providers/source-profile.html) | SourceProfile | A copy of the SourceProfile object passed to the constructor. |
 | [ConnectionState](https://learn.microsoft.com/en-us/dotnet/api/system.data.connectionstate?view=net-8.0) | State | Gets the state of the connection. |
 | [String](https://learn.microsoft.com/en-us/dotnet/api/system.string?view=net-8.0) | TerminalDeviceName | Gets or sets the TerminalDeviceName property. |
