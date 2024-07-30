@@ -431,14 +431,10 @@ Reference:
         path: /reference/datagate/datagate-client/adg-connection.html
       - title: AdgDataSet
         path: /reference/datagate/datagate-client/adg-data-set.html
-      - title: AdgEnumerator
-        path: /reference/datagate/datagate-client/adg-enumerator.html
       - title: AdgFactory
         path: /reference/datagate/datagate-client/adg-factory.html
       - title: AdgKeyTable
         path: /reference/datagate/datagate-client/adg-key-table.html
-      - title: AdgObserver
-        path: /reference/datagate/datagate-client/adg-observer.html
       - title: AdgTable
         path: /reference/datagate/datagate-client/adg-table.html
       - title: As400Program
@@ -479,14 +475,10 @@ Reference:
         path: /reference/datagate/datagate-client/dependent.html
       - title: FileAdapter
         path: /reference/datagate/datagate-client/file-adapter.html
-      - title: OpenFileAdapterDelegate
-        path: /reference/datagate/datagate-client/open-file-adapter-delegate.html
       - title: PrintingProps
         path: /reference/datagate/datagate-client/printing-props.html
       - title: XmlCancelEventArgs
         path: /reference/datagate/datagate-client/xml-cancel-event-args.html
-      - title: XmlCancelEventHandler
-        path: /reference/datagate/datagate-client/xml-cancel-event-handler.html
     - sectiontitle: Enumerations
       sectionpath: /reference/datagate/datagate-client/landing-page-enumerations.html
       section:
@@ -683,8 +675,6 @@ Reference:
         path: /reference/datagate/datagate-data-link/channel-io-stream-exception.html
       - title: EndStreamModeException
         path: /reference/datagate/datagate-data-link/end-stream-mode-exception.html
-      - title: OpenAccessRpg
-        path: /reference/datagate/datagate-data-link/open-access-rpg.html
       - title: ProgParm
         path: /reference/datagate/datagate-data-link/prog-parm.html
       - title: ProgParmType
@@ -724,8 +714,6 @@ Reference:
         path: /reference/datagate/datagate-providers/datagate-credential-equality-comparer.html
       - title: DataGateCredentialExtensions
         path: /reference/datagate/datagate-providers/datagate-credential-extensions.html
-      - title: Exchange5250DS
-        path: /reference/datagate/datagate-providers/exchange5250ds.html
       - title: FileOpenAttr
         path: /reference/datagate/datagate-providers/file-open-attr.html
       - title: Constants
@@ -781,29 +769,6 @@ Reference:
       - title: SqlObjectName
         path: /reference/datagate/datagate-sql-server/sql-object-name.html
   - sectiontitle: ASNA.Extensions.Configuration
-    sectionpath: /reference/datagate/extensions-configuration/landing-page-namespace.html
-    section:
-    - sectiontitle: Classes
-      sectionpath: /reference/datagate/extensions-configuration/landing-page-classes.html
-      section:
-      - title: AsnaConfig
-        path: /reference/datagate/extensions-configuration/asna-config.html
-      - title: AsnaConfigHelper
-        path: /reference/datagate/extensions-configuration/asna-config-helper.html
-      - title: DataGateExtensions
-        path: /reference/datagate/extensions-configuration/datagate-extensions.html
-      - title: RootExtensions
-        path: /reference/datagate/extensions-configuration/root-extensions.html
-    - sectiontitle: Interfaces
-      sectionpath: /reference/datagate/extensions-configuration/landing-page-interfaces.html
-      section:
-      - title: IAsnaConfig
-        path: /reference/datagate/extensions-configuration/i-asna-config.html
-      - title: IDataGateConfig
-        path: /reference/datagate/extensions-configuration/i-datagate-config.html
-
-
-
     sectionpath: /reference/datagate/extensions-configuration/landing-page-namespace.html
     section:
     - sectiontitle: Classes
@@ -1060,12 +1025,8 @@ Reference:
         path: /reference/runtime/qsys-runtime/return.html
       - title: RowAddedEventArgs
         path: /reference/runtime/qsys-runtime/row-added-event-args.html
-      - title: RowAddedEventHandler
-        path: /reference/runtime/qsys-runtime/row-added-event-handler.html
       - title: RowInsertedEventArgs
         path: /reference/runtime/qsys-runtime/row-inserted-event-args.html
-      - title: RowInsertedEventHandler
-        path: /reference/runtime/qsys-runtime/row-inserted-event-handler.html
       - title: RpgTypeExtensions
         path: /reference/runtime/qsys-runtime/rpg-type-extensions.html
       - title: RuntimeException
