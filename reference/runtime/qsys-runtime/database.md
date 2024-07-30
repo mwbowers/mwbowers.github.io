@@ -1,7 +1,7 @@
 ---
 title: "Database class                | QSYS API Reference Guide"
 description: "Handles connections to a Database. "
-last_modified_at: 2024-07-29T23:18:00Z
+last_modified_at: 2024-07-30T15:24:16Z
 ---
 
 Handles connections to a Database.
@@ -262,7 +262,7 @@ Ends a Database transaction operation.
 void EndTpm()
 ```
 
-### String[] GetNames([bool publicDBs](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
+### String\[\] GetNames([bool publicDBs](https://docs.microsoft.com/en-us/dotnet/api/system.boolean))
 
 Returns an array of strings with all of the database names found. 
 
