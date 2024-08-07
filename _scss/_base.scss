@@ -1,3 +1,7 @@
+:root {
+    --pagefind-ui-scale: .63;
+}
+
 html {
     font-family: $font;
     -webkit-text-size-adjust: 100%;
@@ -16,6 +20,14 @@ body {
     overflow-x: hidden;
 }
 
+body.dark {
+    --pagefind-ui-primary: #eeeeee;
+    --pagefind-ui-text: #eeeeee;
+    --pagefind-ui-background: #152028;
+    --pagefind-ui-border: #152028;
+    --pagefind-ui-tag: #152028;
+}
+
 a {
     color: $primary-links;
     text-decoration: none;
@@ -24,4 +36,18 @@ a {
         opacity: .8;
         text-decoration: none;
     }
+}
+
+.pagefind-ui__results-area {
+    background-color: var(--pagefind-ui-background);
+    margin-left: 10rem;
+}
+
+.pagefind-ui__drawer {
+    position: fixed;
+}
+
+.pagefind-ui__search-clear {
+    padding: 0 calc(1rem * var(--pagefind-ui-scale)) 0 calc(1rem * var(--pagefind-ui-scale)) !important;
+    border-color: lightgray
 }

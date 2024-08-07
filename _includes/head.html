@@ -35,6 +35,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js"></script>
+
   {%- comment -%}
   We put these scripts in the head section, but use "defer" loading to allow the
   browser to start loading them as soon as possible. Actual execution of deferred
@@ -54,7 +57,8 @@
   <script defer src="/js/docs.js"></script>
   {%- endif -%}
   {%- if site.local_search -%}
-  <script defer src="/js/search.js"></script>
+
+</script>
   {%- endif -%}
 
   {%- comment -%}

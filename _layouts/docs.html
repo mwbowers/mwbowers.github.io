@@ -82,5 +82,10 @@
         {% include footer.html %}
     </footer>
     <script>const pageURL = "{{ page.url }}";</script>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search-div", showSubResults: true, showImages: false, resetStyles: false });
+        });
+    </script>
 </body>
 </html>

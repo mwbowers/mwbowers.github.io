@@ -1,7 +1,14 @@
-# we wish we could add a theme like this one
-# theme: jekyll-theme-leap-day
-# but we need to learn how to match them with layouts.
-
+# Exclude specific files and directories from the build
+exclude:
+  - build_and_serve.sh
+  - .DS_Store
+  - .gitignore
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .vscode
+  - .ruby-version
 
 plugins:
   - jekyll-sitemap
