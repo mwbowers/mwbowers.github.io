@@ -31,7 +31,7 @@ jobs:
 
     - name: Run Pagefind
       run: |
-        pagefind --source ./_site --output ./_site/search
+        pagefind --source ./_site --output-path ./_site/search
 
   deploy:
     runs-on: ubuntu-latest
